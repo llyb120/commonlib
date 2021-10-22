@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Oct 08 16:37:24 CST 2021
+https\://repo.maven.apache.org/maven2/.lastUpdated=1633682244116
+https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1633682244725
+https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=
+http\://106.52.185.146\:8081/repository/maven-public/.error=Could not transfer artifact com.github.llyb120\:house-api\:jar\:0.0.2 from/to nexus (http\://106.52.185.146\:8081/repository/maven-public/)\: Transfer failed for http\://106.52.185.146\:8081/repository/maven-public/com/github/llyb120/house-api/0.0.2/house-api-0.0.2.jar
+https\://repo.maven.apache.org/maven2/.error=
+@default-nexus-http\://106.52.185.146\:8081/repository/maven-public/.lastUpdated=1633682211366
