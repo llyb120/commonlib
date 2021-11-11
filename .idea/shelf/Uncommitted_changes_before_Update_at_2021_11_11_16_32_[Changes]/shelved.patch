@@ -1,0 +1,52 @@
+Index: com/github/llyb120/nami-spring/0.0.32/nami-spring-0.0.32.jar.sha1
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.32/nami-spring-0.0.32.jar.sha1 b/com/github/llyb120/nami-spring/0.0.32/nami-spring-0.0.32.jar.sha1
+new file mode 100644
+--- /dev/null	
++++ b/com/github/llyb120/nami-spring/0.0.32/nami-spring-0.0.32.jar.sha1	
+@@ -0,0 +1,1 @@
++ba5ab3289b2754021c9aaf06d0a0962afd5fa0ad
+\ No newline at end of file
+Index: com/github/llyb120/nami-spring/0.0.32/_remote.repositories
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.32/_remote.repositories b/com/github/llyb120/nami-spring/0.0.32/_remote.repositories
+new file mode 100644
+--- /dev/null	
++++ b/com/github/llyb120/nami-spring/0.0.32/_remote.repositories	
+@@ -0,0 +1,4 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Wed Jan 06 10:14:36 CST 2021
++nami-spring-0.0.32.pom>nexus=
++nami-spring-0.0.32.jar>nexus=
+Index: com/github/llyb120/nami-spring/0.0.32/nami-spring-0.0.32.jar.sha1
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.32/nami-spring-0.0.32.jar.sha1 b/com/github/llyb120/nami-spring/0.0.32/nami-spring-0.0.32.jar.sha1
+new file mode 100644
+--- /dev/null	
++++ b/com/github/llyb120/nami-spring/0.0.32/nami-spring-0.0.32.jar.sha1	
+@@ -0,0 +1,1 @@
++ba5ab3289b2754021c9aaf06d0a0962afd5fa0ad
+\ No newline at end of file
+Index: com/github/llyb120/nami-spring/0.0.32/_remote.repositories
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.32/_remote.repositories b/com/github/llyb120/nami-spring/0.0.32/_remote.repositories
+new file mode 100644
+--- /dev/null	
++++ b/com/github/llyb120/nami-spring/0.0.32/_remote.repositories	
+@@ -0,0 +1,4 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Wed Jan 06 10:14:36 CST 2021
++nami-spring-0.0.32.pom>nexus=
++nami-spring-0.0.32.jar>nexus=

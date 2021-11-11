@@ -1,0 +1,1 @@
+mvn install:install-file -DgroupId=com.github.llyb120 -DartifactId=nami-spring -Dversion=0.0.32 -Dpackaging=jar -DgeneratePom=true -Dfile=nami-spring-0.0.32.jar

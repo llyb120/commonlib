@@ -1,0 +1,3455 @@
+Index: com/github/llyb120/nami-spring/0.0.32/nami-spring-0.0.32.pom
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.32/nami-spring-0.0.32.pom b/com/github/llyb120/nami-spring/0.0.32/nami-spring-0.0.32.pom
+new file mode 100644
+--- /dev/null	(date 1609899276000)
++++ b/com/github/llyb120/nami-spring/0.0.32/nami-spring-0.0.32.pom	(date 1609899276000)
+@@ -0,0 +1,108 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++
++    <parent>
++        <groupId>org.springframework.boot</groupId>
++        <artifactId>spring-boot-starter-parent</artifactId>
++        <version>2.0.4.RELEASE</version>
++    </parent>
++
++    <groupId>com.github.llyb120</groupId>
++    <artifactId>nami-spring</artifactId>
++    <version>0.0.32</version>
++
++
++    <dependencies>
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter</artifactId>
++            <scope>provided</scope>
++        </dependency>
++
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-web</artifactId>
++            <scope>provided</scope>
++        </dependency>
++
++
++        <!-- https://mvnrepository.com/artifact/cn.hutool/hutool-all -->
++        <dependency>
++            <groupId>cn.hutool</groupId>
++            <artifactId>hutool-all</artifactId>
++            <version>5.1.2</version>
++        </dependency>
++
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-configuration-processor</artifactId>
++            <optional>true</optional>
++        </dependency>
++
++        <dependency>
++            <groupId>com.github.llyb120</groupId>
++            <artifactId>json</artifactId>
++            <version>1.1.15</version>
++        </dependency>
++
++        <dependency>
++            <groupId>org.tuckey</groupId>
++            <artifactId>urlrewritefilter</artifactId>
++            <version>4.0.3</version>
++        </dependency>
++
++        <dependency>
++            <groupId>com.ibeetl</groupId>
++            <artifactId>beetl-framework-starter</artifactId>
++            <version>1.1.60.RELEASE</version>
++            <scope>provided</scope>
++        </dependency>
++
++        <!-- https://mvnrepository.com/artifact/org.mongodb/mongo-java-driver -->
++        <dependency>
++            <groupId>org.mongodb</groupId>
++            <artifactId>mongo-java-driver</artifactId>
++            <version>3.11.0</version>
++            <scope>provided</scope>
++        </dependency>
++
++        <!-- https://mvnrepository.com/artifact/org.eclipse.jdt/ecj -->
++        <dependency>
++            <groupId>org.eclipse.jdt</groupId>
++            <artifactId>ecj</artifactId>
++            <version>3.22.0</version>
++        </dependency>
++
++        <!-- swagger -->
++        <dependency>
++            <groupId>io.springfox</groupId>
++            <artifactId>springfox-swagger2</artifactId>
++            <version>2.9.2</version>
++            <scope>provided</scope>
++        </dependency>
++        <dependency>
++            <groupId>io.springfox</groupId>
++            <artifactId>springfox-swagger-ui</artifactId>
++            <version>2.9.2</version>
++            <scope>provided</scope>
++        </dependency>
++
++
++    </dependencies>
++
++    <distributionManagement>
++        <snapshotRepository>
++            <id>maven-snapshots</id>
++            <name>maven-snapshots-repository</name>
++            <url>http://106.52.185.146:8081/repository/maven-snapshots/</url>
++        </snapshotRepository>
++        <repository>
++            <id>maven-releases</id>
++            <name>maven-releases-repository</name>
++            <url>http://106.52.185.146:8081/repository/maven-releases/</url>
++        </repository>
++    </distributionManagement>
++</project>
+Index: com/github/llyb120/nami-spring/0.0.32/nami-spring-0.0.32.jar.sha1
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.32/nami-spring-0.0.32.jar.sha1 b/com/github/llyb120/nami-spring/0.0.32/nami-spring-0.0.32.jar.sha1
+new file mode 100644
+--- /dev/null	(date 1609899278000)
++++ b/com/github/llyb120/nami-spring/0.0.32/nami-spring-0.0.32.jar.sha1	(date 1609899278000)
+@@ -0,0 +1,1 @@
++ba5ab3289b2754021c9aaf06d0a0962afd5fa0ad
+\ No newline at end of file
+Index: com/github/llyb120/nami-spring/0.0.32/_remote.repositories
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.32/_remote.repositories b/com/github/llyb120/nami-spring/0.0.32/_remote.repositories
+new file mode 100644
+--- /dev/null	(date 1609899278000)
++++ b/com/github/llyb120/nami-spring/0.0.32/_remote.repositories	(date 1609899278000)
+@@ -0,0 +1,4 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Wed Jan 06 10:14:36 CST 2021
++nami-spring-0.0.32.pom>nexus=
++nami-spring-0.0.32.jar>nexus=
+Index: com/github/llyb120/nami-spring/0.0.32/nami-spring-0.0.32.pom.sha1
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.32/nami-spring-0.0.32.pom.sha1 b/com/github/llyb120/nami-spring/0.0.32/nami-spring-0.0.32.pom.sha1
+new file mode 100644
+--- /dev/null	(date 1609899276000)
++++ b/com/github/llyb120/nami-spring/0.0.32/nami-spring-0.0.32.pom.sha1	(date 1609899276000)
+@@ -0,0 +1,1 @@
++421794722de45f3f8dda2e376ca2ec4b29b05947
+\ No newline at end of file
+Index: com/github/llyb120/nami-spring/maven-metadata-local.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/maven-metadata-local.xml b/com/github/llyb120/nami-spring/maven-metadata-local.xml
+new file mode 100644
+--- /dev/null	(date 1600603798000)
++++ b/com/github/llyb120/nami-spring/maven-metadata-local.xml	(date 1600603798000)
+@@ -0,0 +1,15 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<metadata>
++  <groupId>com.github.llyb120</groupId>
++  <artifactId>nami-spring</artifactId>
++  <versioning>
++    <release>0.0.24</release>
++    <versions>
++      <version>0.0.20</version>
++      <version>0.0.21</version>
++      <version>0.0.22</version>
++      <version>0.0.24</version>
++    </versions>
++    <lastUpdated>20200920120956</lastUpdated>
++  </versioning>
++</metadata>
+Index: com/github/llyb120/nami-spring/0.0.32/install.bat
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.32/install.bat b/com/github/llyb120/nami-spring/0.0.32/install.bat
+new file mode 100644
+--- /dev/null	(date 1636619143208)
++++ b/com/github/llyb120/nami-spring/0.0.32/install.bat	(date 1636619143208)
+@@ -0,0 +1,1 @@
++mvn install:install-file -DgroupId=com.github.llyb120 -DartifactId=nami-spring -Dversion=0.0.32 -Dpackaging=jar -DgeneratePom=true -Dfile=nami-spring-0.0.32.jar
+\ No newline at end of file
+Index: com/github/llyb120/safe-transfer/0.0.1/safe-transfer-0.0.1.pom
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/safe-transfer/0.0.1/safe-transfer-0.0.1.pom b/com/github/llyb120/safe-transfer/0.0.1/safe-transfer-0.0.1.pom
+new file mode 100644
+--- /dev/null	(date 1607409438000)
++++ b/com/github/llyb120/safe-transfer/0.0.1/safe-transfer-0.0.1.pom	(date 1607409438000)
+@@ -0,0 +1,54 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++    <parent>
++        <groupId>org.springframework.boot</groupId>
++        <artifactId>spring-boot-starter-parent</artifactId>
++        <version>2.0.4.RELEASE</version>
++    </parent>
++    <properties>
++        <java.version>1.8</java.version>
++    </properties>
++
++
++    <groupId>com.github.llyb120</groupId>
++    <artifactId>safe-transfer</artifactId>
++    <version>0.0.1</version>
++
++    <dependencies>
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-web</artifactId>
++            <scope>provided</scope>
++        </dependency>
++        <dependency>
++            <groupId>cn.hutool</groupId>
++            <artifactId>hutool-all</artifactId>
++            <version>5.4.4</version>
++            <scope>provided</scope>
++        </dependency>
++        <dependency>
++            <groupId>org.projectlombok</groupId>
++            <artifactId>lombok</artifactId>
++            <version>1.16.10</version>
++            <scope>provided</scope>
++        </dependency>
++    </dependencies>
++
++
++    <distributionManagement>
++        <snapshotRepository>
++            <id>maven-snapshots</id>
++            <name>maven-snapshots-repository</name>
++            <url>http://106.52.185.146:8081/repository/maven-snapshots/</url>
++        </snapshotRepository>
++        <repository>
++            <id>maven-releases</id>
++            <name>maven-releases-repository</name>
++            <url>http://106.52.185.146:8081/repository/maven-releases/</url>
++        </repository>
++    </distributionManagement>
++
++</project>
+Index: com/github/llyb120/safe-transfer/0.0.1/_remote.repositories
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/safe-transfer/0.0.1/_remote.repositories b/com/github/llyb120/safe-transfer/0.0.1/_remote.repositories
+new file mode 100644
+--- /dev/null	(date 1607409440000)
++++ b/com/github/llyb120/safe-transfer/0.0.1/_remote.repositories	(date 1607409440000)
+@@ -0,0 +1,4 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Tue Dec 08 14:37:18 CST 2020
++safe-transfer-0.0.1.pom>nexus=
++safe-transfer-0.0.1.jar>nexus=
+Index: com/github/llyb120/safe-transfer/0.0.1/safe-transfer-0.0.1.jar.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/safe-transfer/0.0.1/safe-transfer-0.0.1.jar.lastUpdated b/com/github/llyb120/safe-transfer/0.0.1/safe-transfer-0.0.1.jar.lastUpdated
+new file mode 100644
+--- /dev/null	(date 1607409440000)
++++ b/com/github/llyb120/safe-transfer/0.0.1/safe-transfer-0.0.1.jar.lastUpdated	(date 1607409440000)
+@@ -0,0 +1,7 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Tue Dec 08 14:37:18 CST 2020
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1607409437904
++https\://maven.aliyun.com/nexus/content/groups/public/.error=
++http\://106.52.185.146\:8081/repository/maven-public/.lastUpdated=1607409438013
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=
++https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1607409437488
+Index: com/github/llyb120/safe-transfer/0.0.1/safe-transfer-0.0.1.pom.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/safe-transfer/0.0.1/safe-transfer-0.0.1.pom.lastUpdated b/com/github/llyb120/safe-transfer/0.0.1/safe-transfer-0.0.1.pom.lastUpdated
+new file mode 100644
+--- /dev/null	(date 1607409438000)
++++ b/com/github/llyb120/safe-transfer/0.0.1/safe-transfer-0.0.1.pom.lastUpdated	(date 1607409438000)
+@@ -0,0 +1,7 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Tue Dec 08 14:37:16 CST 2020
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1607409435916
++https\://maven.aliyun.com/nexus/content/groups/public/.error=
++http\://106.52.185.146\:8081/repository/maven-public/.lastUpdated=1607409436111
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=
++https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1607409435388
+Index: com/github/llyb120/safe-transfer/0.0.1/safe-transfer-0.0.1.jar.sha1
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/safe-transfer/0.0.1/safe-transfer-0.0.1.jar.sha1 b/com/github/llyb120/safe-transfer/0.0.1/safe-transfer-0.0.1.jar.sha1
+new file mode 100644
+--- /dev/null	(date 1607409440000)
++++ b/com/github/llyb120/safe-transfer/0.0.1/safe-transfer-0.0.1.jar.sha1	(date 1607409440000)
+@@ -0,0 +1,1 @@
++9fd5aa61913e848649affb7df44856aba571fe3e
+\ No newline at end of file
+Index: com/github/llyb120/safe-transfer/0.0.1/safe-transfer-0.0.1.pom.sha1
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/safe-transfer/0.0.1/safe-transfer-0.0.1.pom.sha1 b/com/github/llyb120/safe-transfer/0.0.1/safe-transfer-0.0.1.pom.sha1
+new file mode 100644
+--- /dev/null	(date 1607409438000)
++++ b/com/github/llyb120/safe-transfer/0.0.1/safe-transfer-0.0.1.pom.sha1	(date 1607409438000)
+@@ -0,0 +1,1 @@
++6655d1af493a5ae99a39de35b78a62cf6df23dbd
+\ No newline at end of file
+Index: com/github/llyb120/safe-transfer/0.0.2/safe-transfer-0.0.2.pom
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/safe-transfer/0.0.2/safe-transfer-0.0.2.pom b/com/github/llyb120/safe-transfer/0.0.2/safe-transfer-0.0.2.pom
+new file mode 100644
+--- /dev/null	(date 1607611874000)
++++ b/com/github/llyb120/safe-transfer/0.0.2/safe-transfer-0.0.2.pom	(date 1607611874000)
+@@ -0,0 +1,54 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++    <parent>
++        <groupId>org.springframework.boot</groupId>
++        <artifactId>spring-boot-starter-parent</artifactId>
++        <version>2.0.4.RELEASE</version>
++    </parent>
++    <properties>
++        <java.version>1.8</java.version>
++    </properties>
++
++
++    <groupId>com.github.llyb120</groupId>
++    <artifactId>safe-transfer</artifactId>
++    <version>0.0.2</version>
++
++    <dependencies>
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-web</artifactId>
++            <scope>provided</scope>
++        </dependency>
++        <dependency>
++            <groupId>cn.hutool</groupId>
++            <artifactId>hutool-all</artifactId>
++            <version>5.4.4</version>
++            <scope>provided</scope>
++        </dependency>
++        <dependency>
++            <groupId>org.projectlombok</groupId>
++            <artifactId>lombok</artifactId>
++            <version>1.16.10</version>
++            <scope>provided</scope>
++        </dependency>
++    </dependencies>
++
++
++    <distributionManagement>
++        <snapshotRepository>
++            <id>maven-snapshots</id>
++            <name>maven-snapshots-repository</name>
++            <url>http://106.52.185.146:8081/repository/maven-snapshots/</url>
++        </snapshotRepository>
++        <repository>
++            <id>maven-releases</id>
++            <name>maven-releases-repository</name>
++            <url>http://106.52.185.146:8081/repository/maven-releases/</url>
++        </repository>
++    </distributionManagement>
++
++</project>
+Index: com/github/llyb120/safe-transfer/0.0.2/safe-transfer-0.0.2.jar.sha1
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/safe-transfer/0.0.2/safe-transfer-0.0.2.jar.sha1 b/com/github/llyb120/safe-transfer/0.0.2/safe-transfer-0.0.2.jar.sha1
+new file mode 100644
+--- /dev/null	(date 1607611896000)
++++ b/com/github/llyb120/safe-transfer/0.0.2/safe-transfer-0.0.2.jar.sha1	(date 1607611896000)
+@@ -0,0 +1,1 @@
++b203ea1ad630640e95808902b1b4a6396c16c658
+\ No newline at end of file
+Index: com/github/llyb120/safe-transfer/0.0.2/_remote.repositories
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/safe-transfer/0.0.2/_remote.repositories b/com/github/llyb120/safe-transfer/0.0.2/_remote.repositories
+new file mode 100644
+--- /dev/null	(date 1607611896000)
++++ b/com/github/llyb120/safe-transfer/0.0.2/_remote.repositories	(date 1607611896000)
+@@ -0,0 +1,4 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Thu Dec 10 22:51:34 CST 2020
++safe-transfer-0.0.2.pom>nexus=
++safe-transfer-0.0.2.jar>nexus=
+Index: com/github/llyb120/safe-transfer/0.0.2/safe-transfer-0.0.2.pom.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/safe-transfer/0.0.2/safe-transfer-0.0.2.pom.lastUpdated b/com/github/llyb120/safe-transfer/0.0.2/safe-transfer-0.0.2.pom.lastUpdated
+new file mode 100644
+--- /dev/null	(date 1607611878000)
++++ b/com/github/llyb120/safe-transfer/0.0.2/safe-transfer-0.0.2.pom.lastUpdated	(date 1607611878000)
+@@ -0,0 +1,7 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Thu Dec 10 22:51:17 CST 2020
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1607611867107
++https\://maven.aliyun.com/nexus/content/groups/public/.error=
++http\://106.52.185.146\:8081/repository/maven-public/.lastUpdated=1607611877557
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=
++https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1607611866355
+Index: com/github/llyb120/safe-transfer/0.0.2/safe-transfer-0.0.2.pom.sha1
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/safe-transfer/0.0.2/safe-transfer-0.0.2.pom.sha1 b/com/github/llyb120/safe-transfer/0.0.2/safe-transfer-0.0.2.pom.sha1
+new file mode 100644
+--- /dev/null	(date 1607611878000)
++++ b/com/github/llyb120/safe-transfer/0.0.2/safe-transfer-0.0.2.pom.sha1	(date 1607611878000)
+@@ -0,0 +1,1 @@
++b2ac7d4b962acb97fb0363834034207bdf0807f4
+\ No newline at end of file
+Index: com/github/llyb120/safe-transfer/0.0.2/safe-transfer-0.0.2.jar.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/safe-transfer/0.0.2/safe-transfer-0.0.2.jar.lastUpdated b/com/github/llyb120/safe-transfer/0.0.2/safe-transfer-0.0.2.jar.lastUpdated
+new file mode 100644
+--- /dev/null	(date 1607611896000)
++++ b/com/github/llyb120/safe-transfer/0.0.2/safe-transfer-0.0.2.jar.lastUpdated	(date 1607611896000)
+@@ -0,0 +1,7 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Thu Dec 10 22:51:34 CST 2020
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1607611880000
++https\://maven.aliyun.com/nexus/content/groups/public/.error=
++http\://106.52.185.146\:8081/repository/maven-public/.lastUpdated=1607611894107
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=
++https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1607611879448
+Index: com/github/llyb120/house-api/0.0.1/house-api-0.0.1.pom
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/house-api/0.0.1/house-api-0.0.1.pom b/com/github/llyb120/house-api/0.0.1/house-api-0.0.1.pom
+new file mode 100644
+--- /dev/null	(date 1604281674000)
++++ b/com/github/llyb120/house-api/0.0.1/house-api-0.0.1.pom	(date 1604281674000)
+@@ -0,0 +1,88 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++
++    <groupId>com.github.llyb120</groupId>
++    <artifactId>house-api</artifactId>
++    <version>0.0.1</version>
++    <build>
++        <plugins>
++            <plugin>
++                <groupId>org.apache.maven.plugins</groupId>
++                <artifactId>maven-compiler-plugin</artifactId>
++                <configuration>
++                    <source>8</source>
++                    <target>8</target>
++                </configuration>
++            </plugin>
++        </plugins>
++    </build>
++
++    <repositories>
++        <repository>
++            <id>nexus</id>
++            <name>Nexus Repository</name>
++            <url>http://106.52.185.146:8081/repository/maven-public/</url>
++            <snapshots>
++                <enabled>true</enabled>
++            </snapshots>
++            <releases>
++                <enabled>true</enabled>
++            </releases>
++        </repository>
++    </repositories>
++    <pluginRepositories>
++        <pluginRepository>
++            <id>nexus</id>
++            <name>Nexus Plugin Repository</name>
++            <url>http://106.52.185.146:8081/repository/maven-public/</url>
++            <snapshots>
++                <enabled>true</enabled>
++            </snapshots>
++            <releases>
++                <enabled>true</enabled>
++            </releases>
++        </pluginRepository>
++    </pluginRepositories>
++
++    <dependencies>
++        <dependency>
++            <groupId>com.github.llyb120</groupId>
++            <artifactId>json</artifactId>
++            <version>1.1.19</version>
++        </dependency>
++        <dependency>
++            <groupId>cn.hutool</groupId>
++            <artifactId>hutool-all</artifactId>
++            <version>5.4.4</version>
++        </dependency>
++        <dependency>
++            <groupId>org.projectlombok</groupId>
++            <artifactId>lombok</artifactId>
++            <version>1.18.12</version>
++            <scope>provided</scope>
++        </dependency>
++        <dependency>
++            <groupId>junit</groupId>
++            <artifactId>junit</artifactId>
++            <version>4.12</version>
++            <scope>test</scope>
++        </dependency>
++    </dependencies>
++
++
++    <distributionManagement>
++        <snapshotRepository>
++            <id>maven-snapshots</id>
++            <name>maven-snapshots-repository</name>
++            <url>http://106.52.185.146:8081/repository/maven-snapshots/</url>
++        </snapshotRepository>
++        <repository>
++            <id>maven-releases</id>
++            <name>maven-releases-repository</name>
++            <url>http://106.52.185.146:8081/repository/maven-releases/</url>
++        </repository>
++    </distributionManagement>
++</project>
+Index: com/github/llyb120/house-api/0.0.1/_remote.repositories
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/house-api/0.0.1/_remote.repositories b/com/github/llyb120/house-api/0.0.1/_remote.repositories
+new file mode 100644
+--- /dev/null	(date 1604281704000)
++++ b/com/github/llyb120/house-api/0.0.1/_remote.repositories	(date 1604281704000)
+@@ -0,0 +1,4 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Mon Nov 02 09:48:23 CST 2020
++house-api-0.0.1.jar>nexus=
++house-api-0.0.1.pom>nexus=
+Index: com/github/llyb120/house-api/0.0.1/house-api-0.0.1.jar.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/house-api/0.0.1/house-api-0.0.1.jar.lastUpdated b/com/github/llyb120/house-api/0.0.1/house-api-0.0.1.jar.lastUpdated
+new file mode 100644
+--- /dev/null	(date 1604281704000)
++++ b/com/github/llyb120/house-api/0.0.1/house-api-0.0.1.jar.lastUpdated	(date 1604281704000)
+@@ -0,0 +1,7 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Mon Nov 02 09:48:23 CST 2020
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1604281691566
++https\://maven.aliyun.com/nexus/content/groups/public/.error=
++http\://106.52.185.146\:8081/repository/maven-public/.lastUpdated=1604281703109
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=
++https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1604281690748
+Index: com/github/llyb120/house-api/0.0.1/house-api-0.0.1.pom.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/house-api/0.0.1/house-api-0.0.1.pom.lastUpdated b/com/github/llyb120/house-api/0.0.1/house-api-0.0.1.pom.lastUpdated
+new file mode 100644
+--- /dev/null	(date 1604281676000)
++++ b/com/github/llyb120/house-api/0.0.1/house-api-0.0.1.pom.lastUpdated	(date 1604281676000)
+@@ -0,0 +1,7 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Mon Nov 02 09:47:54 CST 2020
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1604281673608
++https\://maven.aliyun.com/nexus/content/groups/public/.error=
++http\://106.52.185.146\:8081/repository/maven-public/.lastUpdated=1604281674023
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=
++https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1604281672801
+Index: com/github/llyb120/house-api/0.0.1/house-api-0.0.1.jar.sha1
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/house-api/0.0.1/house-api-0.0.1.jar.sha1 b/com/github/llyb120/house-api/0.0.1/house-api-0.0.1.jar.sha1
+new file mode 100644
+--- /dev/null	(date 1604281692000)
++++ b/com/github/llyb120/house-api/0.0.1/house-api-0.0.1.jar.sha1	(date 1604281692000)
+@@ -0,0 +1,1 @@
++e94f86465d6e56c832ac106a970cead12c8dfcc9
+\ No newline at end of file
+Index: com/github/llyb120/house-api/0.0.1/house-api-0.0.1.pom.sha1
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/house-api/0.0.1/house-api-0.0.1.pom.sha1 b/com/github/llyb120/house-api/0.0.1/house-api-0.0.1.pom.sha1
+new file mode 100644
+--- /dev/null	(date 1604281676000)
++++ b/com/github/llyb120/house-api/0.0.1/house-api-0.0.1.pom.sha1	(date 1604281676000)
+@@ -0,0 +1,1 @@
++aac4b637908e55f3bfe5ee37484e8d2f890e015e
+\ No newline at end of file
+Index: com/github/llyb120/house-api/0.0.2/house-api-0.0.2.jar.sha1
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/house-api/0.0.2/house-api-0.0.2.jar.sha1 b/com/github/llyb120/house-api/0.0.2/house-api-0.0.2.jar.sha1
+new file mode 100644
+--- /dev/null	(date 1604588778000)
++++ b/com/github/llyb120/house-api/0.0.2/house-api-0.0.2.jar.sha1	(date 1604588778000)
+@@ -0,0 +1,1 @@
++c81c72549a55b321c910a9d931de62c3e64598e1
+\ No newline at end of file
+Index: com/github/llyb120/house-api/0.0.2/house-api-0.0.2.pom.sha1
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/house-api/0.0.2/house-api-0.0.2.pom.sha1 b/com/github/llyb120/house-api/0.0.2/house-api-0.0.2.pom.sha1
+new file mode 100644
+--- /dev/null	(date 1604588760000)
++++ b/com/github/llyb120/house-api/0.0.2/house-api-0.0.2.pom.sha1	(date 1604588760000)
+@@ -0,0 +1,1 @@
++d7d397f9a93beddd91dedd72b65a3703712c7897
+\ No newline at end of file
+Index: com/github/llyb120/house-api/0.0.2/house-api-0.0.2.pom
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/house-api/0.0.2/house-api-0.0.2.pom b/com/github/llyb120/house-api/0.0.2/house-api-0.0.2.pom
+new file mode 100644
+--- /dev/null	(date 1604588752000)
++++ b/com/github/llyb120/house-api/0.0.2/house-api-0.0.2.pom	(date 1604588752000)
+@@ -0,0 +1,88 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++
++    <groupId>com.github.llyb120</groupId>
++    <artifactId>house-api</artifactId>
++    <version>0.0.2</version>
++    <build>
++        <plugins>
++            <plugin>
++                <groupId>org.apache.maven.plugins</groupId>
++                <artifactId>maven-compiler-plugin</artifactId>
++                <configuration>
++                    <source>8</source>
++                    <target>8</target>
++                </configuration>
++            </plugin>
++        </plugins>
++    </build>
++
++    <repositories>
++        <repository>
++            <id>nexus</id>
++            <name>Nexus Repository</name>
++            <url>http://106.52.185.146:8081/repository/maven-public/</url>
++            <snapshots>
++                <enabled>true</enabled>
++            </snapshots>
++            <releases>
++                <enabled>true</enabled>
++            </releases>
++        </repository>
++    </repositories>
++    <pluginRepositories>
++        <pluginRepository>
++            <id>nexus</id>
++            <name>Nexus Plugin Repository</name>
++            <url>http://106.52.185.146:8081/repository/maven-public/</url>
++            <snapshots>
++                <enabled>true</enabled>
++            </snapshots>
++            <releases>
++                <enabled>true</enabled>
++            </releases>
++        </pluginRepository>
++    </pluginRepositories>
++
++    <dependencies>
++        <dependency>
++            <groupId>com.github.llyb120</groupId>
++            <artifactId>json</artifactId>
++            <version>1.1.19</version>
++        </dependency>
++        <dependency>
++            <groupId>cn.hutool</groupId>
++            <artifactId>hutool-all</artifactId>
++            <version>5.4.4</version>
++        </dependency>
++        <dependency>
++            <groupId>org.projectlombok</groupId>
++            <artifactId>lombok</artifactId>
++            <version>1.18.12</version>
++            <scope>provided</scope>
++        </dependency>
++        <dependency>
++            <groupId>junit</groupId>
++            <artifactId>junit</artifactId>
++            <version>4.12</version>
++            <scope>test</scope>
++        </dependency>
++    </dependencies>
++
++
++    <distributionManagement>
++        <snapshotRepository>
++            <id>maven-snapshots</id>
++            <name>maven-snapshots-repository</name>
++            <url>http://106.52.185.146:8081/repository/maven-snapshots/</url>
++        </snapshotRepository>
++        <repository>
++            <id>maven-releases</id>
++            <name>maven-releases-repository</name>
++            <url>http://106.52.185.146:8081/repository/maven-releases/</url>
++        </repository>
++    </distributionManagement>
++</project>
+Index: com/github/llyb120/house-api/0.0.2/_remote.repositories
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/house-api/0.0.2/_remote.repositories b/com/github/llyb120/house-api/0.0.2/_remote.repositories
+new file mode 100644
+--- /dev/null	(date 1604588778000)
++++ b/com/github/llyb120/house-api/0.0.2/_remote.repositories	(date 1604588778000)
+@@ -0,0 +1,4 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Thu Nov 05 23:06:17 CST 2020
++house-api-0.0.2.pom>nexus=
++house-api-0.0.2.jar>nexus=
+Index: com/github/llyb120/json/1.1.11/json-1.1.11-sources.jar.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.11/json-1.1.11-sources.jar.lastUpdated b/com/github/llyb120/json/1.1.11/json-1.1.11-sources.jar.lastUpdated
+new file mode 100644
+--- /dev/null	(date 1593746346000)
++++ b/com/github/llyb120/json/1.1.11/json-1.1.11-sources.jar.lastUpdated	(date 1593746346000)
+@@ -0,0 +1,6 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Fri Jul 03 11:19:04 CST 2020
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1593746344334
++https\://maven.aliyun.com/nexus/content/groups/public/.error=
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=
++https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1593746344098
+Index: com/github/llyb120/json/1.1.11/json-1.1.11.pom
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.11/json-1.1.11.pom b/com/github/llyb120/json/1.1.11/json-1.1.11.pom
+new file mode 100644
+--- /dev/null	(date 1593566234000)
++++ b/com/github/llyb120/json/1.1.11/json-1.1.11.pom	(date 1593566234000)
+@@ -0,0 +1,69 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++
++    <groupId>com.github.llyb120</groupId>
++    <artifactId>json</artifactId>
++    <version>1.1.11</version>
++    <build>
++        <plugins>
++            <plugin>
++                <groupId>org.apache.maven.plugins</groupId>
++                <artifactId>maven-compiler-plugin</artifactId>
++                <configuration>
++                    <source>8</source>
++                    <target>8</target>
++                </configuration>
++            </plugin>
++        </plugins>
++    </build>
++
++    <dependencies>
++
++
++        <!-- https://mvnrepository.com/artifact/org.mongodb/mongodb-driver -->
++<!--        <dependency>-->
++<!--            <groupId>org.mongodb</groupId>-->
++<!--            <artifactId>mongodb-driver</artifactId>-->
++<!--            <version>3.12.0</version>-->
++<!--            <scope>provided</scope>-->
++<!--        </dependency>-->
++
++        <dependency>
++            <groupId>org.mongodb</groupId>
++            <artifactId>bson</artifactId>
++            <version>3.12.0</version>
++            <scope>compile</scope>
++        </dependency>
++
++        <dependency>
++            <groupId>junit</groupId>
++            <artifactId>junit</artifactId>
++            <version>4.13-rc-2</version>
++            <scope>test</scope>
++        </dependency>
++
++        <!-- https://mvnrepository.com/artifact/cn.hutool/hutool-all -->
++        <dependency>
++            <groupId>cn.hutool</groupId>
++            <artifactId>hutool-all</artifactId>
++            <version>5.1.2</version>
++            <scope>test</scope>
++        </dependency>
++
++    </dependencies>
++
++    <distributionManagement>
++        <repository>
++            <id>rdc-releases</id>
++            <url>https://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/</url>
++        </repository>
++        <snapshotRepository>
++            <id>rdc-snapshots</id>
++            <url>https://repo.rdc.aliyun.com/repository/75714-snapshot-t7sMIW/</url>
++        </snapshotRepository>
++    </distributionManagement>
++
++</project>
+\ No newline at end of file
+Index: com/github/llyb120/json/1.1.11/_remote.repositories
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.11/_remote.repositories b/com/github/llyb120/json/1.1.11/_remote.repositories
+new file mode 100644
+--- /dev/null	(date 1593566244000)
++++ b/com/github/llyb120/json/1.1.11/_remote.repositories	(date 1593566244000)
+@@ -0,0 +1,4 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Wed Jul 01 09:17:23 CST 2020
++json-1.1.11.pom>rdc-releases=
++json-1.1.11.jar>rdc-releases=
+Index: com/github/llyb120/json/1.1.11/json-1.1.11.jar.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.11/json-1.1.11.jar.lastUpdated b/com/github/llyb120/json/1.1.11/json-1.1.11.jar.lastUpdated
+new file mode 100644
+--- /dev/null	(date 1595426196000)
++++ b/com/github/llyb120/json/1.1.11/json-1.1.11.jar.lastUpdated	(date 1595426196000)
+@@ -0,0 +1,6 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Wed Jul 22 21:56:34 CST 2020
++https\://repo.maven.apache.org/maven2/.lastUpdated=1595426194168
++https\://repo.spring.io/libs-milestone/.lastUpdated=1595426185182
++https\://repo.maven.apache.org/maven2/.error=
++https\://repo.spring.io/libs-milestone/.error=
+Index: com/github/llyb120/json/1.1.11/json-1.1.11.pom.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.11/json-1.1.11.pom.lastUpdated b/com/github/llyb120/json/1.1.11/json-1.1.11.pom.lastUpdated
+new file mode 100644
+--- /dev/null	(date 1595426180000)
++++ b/com/github/llyb120/json/1.1.11/json-1.1.11.pom.lastUpdated	(date 1595426180000)
+@@ -0,0 +1,9 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Wed Jul 22 21:56:19 CST 2020
++https\://repo.maven.apache.org/maven2/.lastUpdated=1595426179065
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1593566233296
++https\://maven.aliyun.com/nexus/content/groups/public/.error=
++https\://repo.spring.io/libs-milestone/.lastUpdated=1595426177043
++https\://repo.maven.apache.org/maven2/.error=
++https\://repo.spring.io/libs-milestone/.error=
++https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1593566231877
+Index: com/github/llyb120/json/1.1.11/json-1.1.11.jar.sha1
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.11/json-1.1.11.jar.sha1 b/com/github/llyb120/json/1.1.11/json-1.1.11.jar.sha1
+new file mode 100644
+--- /dev/null	(date 1593566244000)
++++ b/com/github/llyb120/json/1.1.11/json-1.1.11.jar.sha1	(date 1593566244000)
+@@ -0,0 +1,1 @@
++9102aa880628cdf440e37900b0bd8695690e4e1c
+\ No newline at end of file
+Index: com/github/llyb120/json/1.1.11/json-1.1.11.pom.sha1
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.11/json-1.1.11.pom.sha1 b/com/github/llyb120/json/1.1.11/json-1.1.11.pom.sha1
+new file mode 100644
+--- /dev/null	(date 1593566234000)
++++ b/com/github/llyb120/json/1.1.11/json-1.1.11.pom.sha1	(date 1593566234000)
+@@ -0,0 +1,1 @@
++b0498d39a0eaa44d016c0497d476875778341045
+\ No newline at end of file
+Index: com/github/llyb120/json/1.1.13/json-1.1.13.pom
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.13/json-1.1.13.pom b/com/github/llyb120/json/1.1.13/json-1.1.13.pom
+new file mode 100644
+--- /dev/null	(date 1596081396000)
++++ b/com/github/llyb120/json/1.1.13/json-1.1.13.pom	(date 1596081396000)
+@@ -0,0 +1,69 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++
++    <groupId>com.github.llyb120</groupId>
++    <artifactId>json</artifactId>
++    <version>1.1.13</version>
++    <build>
++        <plugins>
++            <plugin>
++                <groupId>org.apache.maven.plugins</groupId>
++                <artifactId>maven-compiler-plugin</artifactId>
++                <configuration>
++                    <source>8</source>
++                    <target>8</target>
++                </configuration>
++            </plugin>
++        </plugins>
++    </build>
++
++    <dependencies>
++
++
++        <!-- https://mvnrepository.com/artifact/org.mongodb/mongodb-driver -->
++<!--        <dependency>-->
++<!--            <groupId>org.mongodb</groupId>-->
++<!--            <artifactId>mongodb-driver</artifactId>-->
++<!--            <version>3.12.0</version>-->
++<!--            <scope>provided</scope>-->
++<!--        </dependency>-->
++
++        <dependency>
++            <groupId>org.mongodb</groupId>
++            <artifactId>bson</artifactId>
++            <version>3.12.0</version>
++            <scope>compile</scope>
++        </dependency>
++
++        <dependency>
++            <groupId>junit</groupId>
++            <artifactId>junit</artifactId>
++            <version>4.13-rc-2</version>
++            <scope>test</scope>
++        </dependency>
++
++        <!-- https://mvnrepository.com/artifact/cn.hutool/hutool-all -->
++        <dependency>
++            <groupId>cn.hutool</groupId>
++            <artifactId>hutool-all</artifactId>
++            <version>5.1.2</version>
++            <scope>test</scope>
++        </dependency>
++
++    </dependencies>
++
++    <distributionManagement>
++        <repository>
++            <id>rdc-releases</id>
++            <url>https://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/</url>
++        </repository>
++        <snapshotRepository>
++            <id>rdc-snapshots</id>
++            <url>https://repo.rdc.aliyun.com/repository/75714-snapshot-t7sMIW/</url>
++        </snapshotRepository>
++    </distributionManagement>
++
++</project>
+\ No newline at end of file
+Index: com/github/llyb120/json/1.1.13/_remote.repositories
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.13/_remote.repositories b/com/github/llyb120/json/1.1.13/_remote.repositories
+new file mode 100644
+--- /dev/null	(date 1596081402000)
++++ b/com/github/llyb120/json/1.1.13/_remote.repositories	(date 1596081402000)
+@@ -0,0 +1,4 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Thu Jul 30 11:56:40 CST 2020
++json-1.1.13.jar>rdc-releases=
++json-1.1.13.pom>rdc-releases=
+Index: com/github/llyb120/json/1.1.13/json-1.1.13.jar.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.13/json-1.1.13.jar.lastUpdated b/com/github/llyb120/json/1.1.13/json-1.1.13.jar.lastUpdated
+new file mode 100644
+--- /dev/null	(date 1596081402000)
++++ b/com/github/llyb120/json/1.1.13/json-1.1.13.jar.lastUpdated	(date 1596081402000)
+@@ -0,0 +1,5 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Thu Jul 30 11:56:40 CST 2020
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1596081400312
++https\://maven.aliyun.com/nexus/content/groups/public/.error=
++https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1596081398864
+Index: com/github/llyb120/json/1.1.13/json-1.1.13.pom.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.13/json-1.1.13.pom.lastUpdated b/com/github/llyb120/json/1.1.13/json-1.1.13.pom.lastUpdated
+new file mode 100644
+--- /dev/null	(date 1596081396000)
++++ b/com/github/llyb120/json/1.1.13/json-1.1.13.pom.lastUpdated	(date 1596081396000)
+@@ -0,0 +1,5 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Thu Jul 30 11:56:35 CST 2020
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1596081395757
++https\://maven.aliyun.com/nexus/content/groups/public/.error=
++https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1596081394042
+Index: com/github/llyb120/json/1.1.13/json-1.1.13.jar.sha1
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.13/json-1.1.13.jar.sha1 b/com/github/llyb120/json/1.1.13/json-1.1.13.jar.sha1
+new file mode 100644
+--- /dev/null	(date 1596081402000)
++++ b/com/github/llyb120/json/1.1.13/json-1.1.13.jar.sha1	(date 1596081402000)
+@@ -0,0 +1,1 @@
++2402f9edf6a5d85eee7d4c31aa07a918df7109e7
+\ No newline at end of file
+Index: com/github/llyb120/json/1.1.13/json-1.1.13.pom.sha1
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.13/json-1.1.13.pom.sha1 b/com/github/llyb120/json/1.1.13/json-1.1.13.pom.sha1
+new file mode 100644
+--- /dev/null	(date 1596081396000)
++++ b/com/github/llyb120/json/1.1.13/json-1.1.13.pom.sha1	(date 1596081396000)
+@@ -0,0 +1,1 @@
++b7021bc1ad61f45fbabeba34d4225b54c9f6e76a
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1636619483586)
++++ b/.idea/vcs.xml	(date 1636619483586)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/runConfigurations.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/runConfigurations.xml b/.idea/runConfigurations.xml
+new file mode 100644
+--- /dev/null	(date 1636619483597)
++++ b/.idea/runConfigurations.xml	(date 1636619483597)
+@@ -0,0 +1,10 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="RunConfigurationProducerService">
++    <option name="ignoredProducers">
++      <set>
++        <option value="com.android.tools.idea.compose.preview.runconfiguration.ComposePreviewRunConfigurationProducer" />
++      </set>
++    </option>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/commonlib.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/commonlib.iml b/.idea/commonlib.iml
+new file mode 100644
+--- /dev/null	(date 1636619483550)
++++ b/.idea/commonlib.iml	(date 1636619483550)
+@@ -0,0 +1,9 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$" />
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1636619483566)
++++ b/.idea/modules.xml	(date 1636619483566)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/commonlib.iml" filepath="$PROJECT_DIR$/.idea/commonlib.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: com/github/llyb120/json/1.1.14/json-1.1.14.jar.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.14/json-1.1.14.jar.lastUpdated b/com/github/llyb120/json/1.1.14/json-1.1.14.jar.lastUpdated
+new file mode 100644
+--- /dev/null	(date 1596181918000)
++++ b/com/github/llyb120/json/1.1.14/json-1.1.14.jar.lastUpdated	(date 1596181918000)
+@@ -0,0 +1,8 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Fri Jul 31 15:51:56 CST 2020
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1596181911131
++https\://maven.aliyun.com/nexus/content/groups/public/.error=
++https\://repo.spring.io/libs-milestone/.lastUpdated=1596181916434
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=
++https\://repo.spring.io/libs-milestone/.error=
++https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1596181910689
+Index: com/github/llyb120/json/1.1.14/json-1.1.14.pom.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.14/json-1.1.14.pom.lastUpdated b/com/github/llyb120/json/1.1.14/json-1.1.14.pom.lastUpdated
+new file mode 100644
+--- /dev/null	(date 1596181910000)
++++ b/com/github/llyb120/json/1.1.14/json-1.1.14.pom.lastUpdated	(date 1596181910000)
+@@ -0,0 +1,8 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Fri Jul 31 15:51:49 CST 2020
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1596181905604
++https\://maven.aliyun.com/nexus/content/groups/public/.error=
++https\://repo.spring.io/libs-milestone/.lastUpdated=1596181909971
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=
++https\://repo.spring.io/libs-milestone/.error=
++https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1596181904998
+Index: com/github/llyb120/json/1.1.14/json-1.1.14.pom
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.14/json-1.1.14.pom b/com/github/llyb120/json/1.1.14/json-1.1.14.pom
+new file mode 100644
+--- /dev/null	(date 1596182882000)
++++ b/com/github/llyb120/json/1.1.14/json-1.1.14.pom	(date 1596182882000)
+@@ -0,0 +1,69 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++
++    <groupId>com.github.llyb120</groupId>
++    <artifactId>json</artifactId>
++    <version>1.1.14</version>
++    <build>
++        <plugins>
++            <plugin>
++                <groupId>org.apache.maven.plugins</groupId>
++                <artifactId>maven-compiler-plugin</artifactId>
++                <configuration>
++                    <source>8</source>
++                    <target>8</target>
++                </configuration>
++            </plugin>
++        </plugins>
++    </build>
++
++    <dependencies>
++
++
++        <!-- https://mvnrepository.com/artifact/org.mongodb/mongodb-driver -->
++<!--        <dependency>-->
++<!--            <groupId>org.mongodb</groupId>-->
++<!--            <artifactId>mongodb-driver</artifactId>-->
++<!--            <version>3.12.0</version>-->
++<!--            <scope>provided</scope>-->
++<!--        </dependency>-->
++
++        <dependency>
++            <groupId>org.mongodb</groupId>
++            <artifactId>bson</artifactId>
++            <version>3.12.0</version>
++            <scope>compile</scope>
++        </dependency>
++
++        <dependency>
++            <groupId>junit</groupId>
++            <artifactId>junit</artifactId>
++            <version>4.13-rc-2</version>
++            <scope>test</scope>
++        </dependency>
++
++        <!-- https://mvnrepository.com/artifact/cn.hutool/hutool-all -->
++        <dependency>
++            <groupId>cn.hutool</groupId>
++            <artifactId>hutool-all</artifactId>
++            <version>5.1.2</version>
++            <scope>test</scope>
++        </dependency>
++
++    </dependencies>
++
++    <distributionManagement>
++        <repository>
++            <id>rdc-releases</id>
++            <url>https://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/</url>
++        </repository>
++        <snapshotRepository>
++            <id>rdc-snapshots</id>
++            <url>https://repo.rdc.aliyun.com/repository/75714-snapshot-t7sMIW/</url>
++        </snapshotRepository>
++    </distributionManagement>
++
++</project>
+\ No newline at end of file
+Index: com/github/llyb120/json/1.1.14/_remote.repositories
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.14/_remote.repositories b/com/github/llyb120/json/1.1.14/_remote.repositories
+new file mode 100644
+--- /dev/null	(date 1597239154000)
++++ b/com/github/llyb120/json/1.1.14/_remote.repositories	(date 1597239154000)
+@@ -0,0 +1,4 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Wed Aug 12 21:32:33 CST 2020
++json-1.1.14.pom>=
++json-1.1.14.jar>=
+Index: com/github/llyb120/json/1.1.14/json-1.1.14-sources.jar.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.14/json-1.1.14-sources.jar.lastUpdated b/com/github/llyb120/json/1.1.14/json-1.1.14-sources.jar.lastUpdated
+new file mode 100644
+--- /dev/null	(date 1597306844000)
++++ b/com/github/llyb120/json/1.1.14/json-1.1.14-sources.jar.lastUpdated	(date 1597306844000)
+@@ -0,0 +1,8 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Thu Aug 13 16:20:43 CST 2020
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1597306843311
++https\://maven.aliyun.com/nexus/content/groups/public/.error=
++https\://repo.spring.io/libs-milestone/.lastUpdated=1596182093520
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=
++https\://repo.spring.io/libs-milestone/.error=
++https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1597306842669
+Index: com/github/llyb120/json/1.1.16/json-1.1.16.pom
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.16/json-1.1.16.pom b/com/github/llyb120/json/1.1.16/json-1.1.16.pom
+new file mode 100644
+--- /dev/null	(date 1598267188000)
++++ b/com/github/llyb120/json/1.1.16/json-1.1.16.pom	(date 1598267188000)
+@@ -0,0 +1,69 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++
++    <groupId>com.github.llyb120</groupId>
++    <artifactId>json</artifactId>
++    <version>1.1.16</version>
++    <build>
++        <plugins>
++            <plugin>
++                <groupId>org.apache.maven.plugins</groupId>
++                <artifactId>maven-compiler-plugin</artifactId>
++                <configuration>
++                    <source>8</source>
++                    <target>8</target>
++                </configuration>
++            </plugin>
++        </plugins>
++    </build>
++
++    <dependencies>
++
++
++        <!-- https://mvnrepository.com/artifact/org.mongodb/mongodb-driver -->
++<!--        <dependency>-->
++<!--            <groupId>org.mongodb</groupId>-->
++<!--            <artifactId>mongodb-driver</artifactId>-->
++<!--            <version>3.12.0</version>-->
++<!--            <scope>provided</scope>-->
++<!--        </dependency>-->
++
++        <dependency>
++            <groupId>org.mongodb</groupId>
++            <artifactId>bson</artifactId>
++            <version>3.12.0</version>
++            <scope>compile</scope>
++        </dependency>
++
++        <dependency>
++            <groupId>junit</groupId>
++            <artifactId>junit</artifactId>
++            <version>4.13-rc-2</version>
++            <scope>test</scope>
++        </dependency>
++
++        <!-- https://mvnrepository.com/artifact/cn.hutool/hutool-all -->
++        <dependency>
++            <groupId>cn.hutool</groupId>
++            <artifactId>hutool-all</artifactId>
++            <version>5.1.2</version>
++            <scope>test</scope>
++        </dependency>
++
++    </dependencies>
++
++    <distributionManagement>
++        <repository>
++            <id>rdc-releases</id>
++            <url>https://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/</url>
++        </repository>
++        <snapshotRepository>
++            <id>rdc-snapshots</id>
++            <url>https://repo.rdc.aliyun.com/repository/75714-snapshot-t7sMIW/</url>
++        </snapshotRepository>
++    </distributionManagement>
++
++</project>
+\ No newline at end of file
+Index: com/github/llyb120/json/1.1.16/json-1.1.16.pom.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.16/json-1.1.16.pom.lastUpdated b/com/github/llyb120/json/1.1.16/json-1.1.16.pom.lastUpdated
+new file mode 100644
+--- /dev/null	(date 1598267114000)
++++ b/com/github/llyb120/json/1.1.16/json-1.1.16.pom.lastUpdated	(date 1598267114000)
+@@ -0,0 +1,6 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Mon Aug 24 19:05:13 CST 2020
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1598267113393
++https\://maven.aliyun.com/nexus/content/groups/public/.error=
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=
++https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1598267112715
+Index: com/github/llyb120/json/1.1.16/_remote.repositories
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.16/_remote.repositories b/com/github/llyb120/json/1.1.16/_remote.repositories
+new file mode 100644
+--- /dev/null	(date 1598267226000)
++++ b/com/github/llyb120/json/1.1.16/_remote.repositories	(date 1598267226000)
+@@ -0,0 +1,4 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Mon Aug 24 19:07:05 CST 2020
++json-1.1.16.pom>=
++json-1.1.16.jar>=
+Index: com/github/llyb120/json/1.1.16/json-1.1.16.jar.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.16/json-1.1.16.jar.lastUpdated b/com/github/llyb120/json/1.1.16/json-1.1.16.jar.lastUpdated
+new file mode 100644
+--- /dev/null	(date 1598267118000)
++++ b/com/github/llyb120/json/1.1.16/json-1.1.16.jar.lastUpdated	(date 1598267118000)
+@@ -0,0 +1,6 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Mon Aug 24 19:05:17 CST 2020
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1598267117761
++https\://maven.aliyun.com/nexus/content/groups/public/.error=
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=
++https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1598267117312
+Index: com/github/llyb120/nami-spring/0.0.11/nami-spring-0.0.11.jar.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.11/nami-spring-0.0.11.jar.lastUpdated b/com/github/llyb120/nami-spring/0.0.11/nami-spring-0.0.11.jar.lastUpdated
+new file mode 100644
+--- /dev/null	(date 1614133554000)
++++ b/com/github/llyb120/nami-spring/0.0.11/nami-spring-0.0.11.jar.lastUpdated	(date 1614133554000)
+@@ -0,0 +1,9 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Wed Feb 24 10:25:53 CST 2021
++https\://repo.maven.apache.org/maven2/.lastUpdated=1614133553266
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1593566243395
++https\://maven.aliyun.com/nexus/content/groups/public/.error=
++https\://repo.spring.io/libs-milestone/.lastUpdated=1593530250786
++https\://repo.maven.apache.org/maven2/.error=
++https\://repo.spring.io/libs-milestone/.error=
++https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1593566242112
+Index: com/github/llyb120/nami-spring/0.0.11/nami-spring-0.0.11.pom.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.11/nami-spring-0.0.11.pom.lastUpdated b/com/github/llyb120/nami-spring/0.0.11/nami-spring-0.0.11.pom.lastUpdated
+new file mode 100644
+--- /dev/null	(date 1614133552000)
++++ b/com/github/llyb120/nami-spring/0.0.11/nami-spring-0.0.11.pom.lastUpdated	(date 1614133552000)
+@@ -0,0 +1,9 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Wed Feb 24 10:25:51 CST 2021
++https\://repo.maven.apache.org/maven2/.lastUpdated=1614133551610
++@default-spring-milestones-https\://repo.spring.io/libs-milestone/.lastUpdated=1614048743932
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1593566213143
++https\://maven.aliyun.com/nexus/content/groups/public/.error=
++https\://repo.maven.apache.org/maven2/.error=
++https\://repo.spring.io/libs-milestone/.error=Could not transfer artifact com.github.llyb120\:nami-spring\:pom\:0.0.11 from/to spring-milestones (https\://repo.spring.io/libs-milestone)\: Authentication failed for https\://repo.spring.io/libs-milestone/com/github/llyb120/nami-spring/0.0.11/nami-spring-0.0.11.pom 401 Unauthorized
++https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1593566209447
+Index: com/github/llyb120/nami-spring/0.0.11/nami-spring-0.0.11.jar.sha1
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.11/nami-spring-0.0.11.jar.sha1 b/com/github/llyb120/nami-spring/0.0.11/nami-spring-0.0.11.jar.sha1
+new file mode 100644
+--- /dev/null	(date 1593566244000)
++++ b/com/github/llyb120/nami-spring/0.0.11/nami-spring-0.0.11.jar.sha1	(date 1593566244000)
+@@ -0,0 +1,1 @@
++1d293f008d1c6b2f84fcfddb35583039d13c7f50
+\ No newline at end of file
+Index: com/github/llyb120/nami-spring/0.0.11/nami-spring-0.0.11.pom.sha1
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.11/nami-spring-0.0.11.pom.sha1 b/com/github/llyb120/nami-spring/0.0.11/nami-spring-0.0.11.pom.sha1
+new file mode 100644
+--- /dev/null	(date 1593566214000)
++++ b/com/github/llyb120/nami-spring/0.0.11/nami-spring-0.0.11.pom.sha1	(date 1593566214000)
+@@ -0,0 +1,1 @@
++3b9563e6b45330438aadbda8721e8d25eba53a6f
+\ No newline at end of file
+Index: com/github/llyb120/json/1.1.18/json-1.1.18.pom
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.18/json-1.1.18.pom b/com/github/llyb120/json/1.1.18/json-1.1.18.pom
+new file mode 100644
+--- /dev/null	(date 1599293152000)
++++ b/com/github/llyb120/json/1.1.18/json-1.1.18.pom	(date 1599293152000)
+@@ -0,0 +1,80 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++
++    <groupId>com.github.llyb120</groupId>
++    <artifactId>json</artifactId>
++    <version>1.1.18</version>
++    <build>
++        <plugins>
++            <plugin>
++                <groupId>org.apache.maven.plugins</groupId>
++                <artifactId>maven-compiler-plugin</artifactId>
++                <configuration>
++                    <source>8</source>
++                    <target>8</target>
++                </configuration>
++            </plugin>
++        </plugins>
++    </build>
++
++    <dependencies>
++
++
++        <!-- https://mvnrepository.com/artifact/org.mongodb/mongodb-driver -->
++<!--        <dependency>-->
++<!--            <groupId>org.mongodb</groupId>-->
++<!--            <artifactId>mongodb-driver</artifactId>-->
++<!--            <version>3.12.0</version>-->
++<!--            <scope>provided</scope>-->
++<!--        </dependency>-->
++
++        <dependency>
++            <groupId>org.mongodb</groupId>
++            <artifactId>bson</artifactId>
++            <version>3.12.0</version>
++            <scope>compile</scope>
++        </dependency>
++
++        <dependency>
++            <groupId>junit</groupId>
++            <artifactId>junit</artifactId>
++            <version>4.13-rc-2</version>
++            <scope>test</scope>
++        </dependency>
++
++        <!-- https://mvnrepository.com/artifact/cn.hutool/hutool-all -->
++        <dependency>
++            <groupId>cn.hutool</groupId>
++            <artifactId>hutool-all</artifactId>
++            <version>5.1.2</version>
++            <scope>test</scope>
++        </dependency>
++
++    </dependencies>
++
++    <distributionManagement>
++        <snapshotRepository>
++            <id>maven-snapshots</id>
++            <name>maven-snapshots-repository</name>
++            <url>http://106.52.185.146:8081/repository/maven-snapshots/</url>
++        </snapshotRepository>
++        <repository>
++            <id>maven-releases</id>
++            <name>maven-releases-repository</name>
++            <url>http://106.52.185.146:8081/repository/maven-releases/</url>
++        </repository>
++    </distributionManagement>
++<!--    <distributionManagement>-->
++<!--        <repository>-->
++<!--            <id>rdc-releases</id>-->
++<!--            <url>https://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/</url>-->
++<!--        </repository>-->
++<!--        <snapshotRepository>-->
++<!--            <id>rdc-snapshots</id>-->
++<!--            <url>https://repo.rdc.aliyun.com/repository/75714-snapshot-t7sMIW/</url>-->
++<!--        </snapshotRepository>-->
++<!--    </distributionManagement>-->
++</project>
+\ No newline at end of file
+Index: com/github/llyb120/json/1.1.18/_remote.repositories
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.18/_remote.repositories b/com/github/llyb120/json/1.1.18/_remote.repositories
+new file mode 100644
+--- /dev/null	(date 1599293160000)
++++ b/com/github/llyb120/json/1.1.18/_remote.repositories	(date 1599293160000)
+@@ -0,0 +1,4 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Sat Sep 05 16:05:59 CST 2020
++json-1.1.18.pom>nexus=
++json-1.1.18.jar>nexus=
+Index: com/github/llyb120/json/1.1.17/json-1.1.17.jar.sha1
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.17/json-1.1.17.jar.sha1 b/com/github/llyb120/json/1.1.17/json-1.1.17.jar.sha1
+new file mode 100644
+--- /dev/null	(date 1598802006000)
++++ b/com/github/llyb120/json/1.1.17/json-1.1.17.jar.sha1	(date 1598802006000)
+@@ -0,0 +1,1 @@
++337cb45eefddb794f7acc7424ce6abdb5cf71fb9
+\ No newline at end of file
+Index: com/github/llyb120/json/1.1.17/json-1.1.17.pom.sha1
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.17/json-1.1.17.pom.sha1 b/com/github/llyb120/json/1.1.17/json-1.1.17.pom.sha1
+new file mode 100644
+--- /dev/null	(date 1598801998000)
++++ b/com/github/llyb120/json/1.1.17/json-1.1.17.pom.sha1	(date 1598801998000)
+@@ -0,0 +1,1 @@
++e4d0ffe2bafa7c869a6a86108ea4a2f3b7941f8a
+\ No newline at end of file
+Index: com/github/llyb120/json/1.1.17/json-1.1.17.pom
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.17/json-1.1.17.pom b/com/github/llyb120/json/1.1.17/json-1.1.17.pom
+new file mode 100644
+--- /dev/null	(date 1598801998000)
++++ b/com/github/llyb120/json/1.1.17/json-1.1.17.pom	(date 1598801998000)
+@@ -0,0 +1,80 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++
++    <groupId>com.github.llyb120</groupId>
++    <artifactId>json</artifactId>
++    <version>1.1.17</version>
++    <build>
++        <plugins>
++            <plugin>
++                <groupId>org.apache.maven.plugins</groupId>
++                <artifactId>maven-compiler-plugin</artifactId>
++                <configuration>
++                    <source>8</source>
++                    <target>8</target>
++                </configuration>
++            </plugin>
++        </plugins>
++    </build>
++
++    <dependencies>
++
++
++        <!-- https://mvnrepository.com/artifact/org.mongodb/mongodb-driver -->
++<!--        <dependency>-->
++<!--            <groupId>org.mongodb</groupId>-->
++<!--            <artifactId>mongodb-driver</artifactId>-->
++<!--            <version>3.12.0</version>-->
++<!--            <scope>provided</scope>-->
++<!--        </dependency>-->
++
++        <dependency>
++            <groupId>org.mongodb</groupId>
++            <artifactId>bson</artifactId>
++            <version>3.12.0</version>
++            <scope>compile</scope>
++        </dependency>
++
++        <dependency>
++            <groupId>junit</groupId>
++            <artifactId>junit</artifactId>
++            <version>4.13-rc-2</version>
++            <scope>test</scope>
++        </dependency>
++
++        <!-- https://mvnrepository.com/artifact/cn.hutool/hutool-all -->
++        <dependency>
++            <groupId>cn.hutool</groupId>
++            <artifactId>hutool-all</artifactId>
++            <version>5.1.2</version>
++            <scope>test</scope>
++        </dependency>
++
++    </dependencies>
++
++    <distributionManagement>
++        <snapshotRepository>
++            <id>maven-snapshots</id>
++            <name>maven-snapshots-repository</name>
++            <url>http://106.52.185.146:8081/repository/maven-snapshots/</url>
++        </snapshotRepository>
++        <repository>
++            <id>maven-releases</id>
++            <name>maven-releases-repository</name>
++            <url>http://106.52.185.146:8081/repository/maven-releases/</url>
++        </repository>
++    </distributionManagement>
++<!--    <distributionManagement>-->
++<!--        <repository>-->
++<!--            <id>rdc-releases</id>-->
++<!--            <url>https://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/</url>-->
++<!--        </repository>-->
++<!--        <snapshotRepository>-->
++<!--            <id>rdc-snapshots</id>-->
++<!--            <url>https://repo.rdc.aliyun.com/repository/75714-snapshot-t7sMIW/</url>-->
++<!--        </snapshotRepository>-->
++<!--    </distributionManagement>-->
++</project>
+\ No newline at end of file
+Index: com/github/llyb120/json/1.1.17/_remote.repositories
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.17/_remote.repositories b/com/github/llyb120/json/1.1.17/_remote.repositories
+new file mode 100644
+--- /dev/null	(date 1598802006000)
++++ b/com/github/llyb120/json/1.1.17/_remote.repositories	(date 1598802006000)
+@@ -0,0 +1,4 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Sun Aug 30 23:40:04 CST 2020
++json-1.1.17.pom>nexus=
++json-1.1.17.jar>nexus=
+Index: com/github/llyb120/nami-spring/0.0.11/nami-spring-0.0.11.pom
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.11/nami-spring-0.0.11.pom b/com/github/llyb120/nami-spring/0.0.11/nami-spring-0.0.11.pom
+new file mode 100644
+--- /dev/null	(date 1593566214000)
++++ b/com/github/llyb120/nami-spring/0.0.11/nami-spring-0.0.11.pom	(date 1593566214000)
+@@ -0,0 +1,84 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++
++    <parent>
++        <groupId>org.springframework.boot</groupId>
++        <artifactId>spring-boot-starter-parent</artifactId>
++        <version>2.0.4.RELEASE</version>
++    </parent>
++
++    <groupId>com.github.llyb120</groupId>
++    <artifactId>nami-spring</artifactId>
++    <version>0.0.11</version>
++
++
++    <dependencies>
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter</artifactId>
++            <scope>provided</scope>
++        </dependency>
++
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-web</artifactId>
++            <scope>provided</scope>
++        </dependency>
++
++
++        <!-- https://mvnrepository.com/artifact/cn.hutool/hutool-all -->
++        <dependency>
++            <groupId>cn.hutool</groupId>
++            <artifactId>hutool-all</artifactId>
++            <version>5.1.2</version>
++        </dependency>
++
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-configuration-processor</artifactId>
++            <optional>true</optional>
++        </dependency>
++
++        <dependency>
++            <groupId>com.github.llyb120</groupId>
++            <artifactId>json</artifactId>
++            <version>LATEST</version>
++        </dependency>
++
++        <dependency>
++            <groupId>org.tuckey</groupId>
++            <artifactId>urlrewritefilter</artifactId>
++            <version>4.0.3</version>
++        </dependency>
++
++        <dependency>
++            <groupId>com.ibeetl</groupId>
++            <artifactId>beetl-framework-starter</artifactId>
++            <version>1.1.60.RELEASE</version>
++            <scope>provided</scope>
++        </dependency>
++
++        <!-- https://mvnrepository.com/artifact/org.mongodb/mongo-java-driver -->
++        <dependency>
++            <groupId>org.mongodb</groupId>
++            <artifactId>mongo-java-driver</artifactId>
++            <version>3.11.0</version>
++            <scope>provided</scope>
++        </dependency>
++
++    </dependencies>
++
++    <distributionManagement>
++        <repository>
++            <id>rdc-releases</id>
++            <url>https://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/</url>
++        </repository>
++        <snapshotRepository>
++            <id>rdc-snapshots</id>
++            <url>https://repo.rdc.aliyun.com/repository/75714-snapshot-t7sMIW/</url>
++        </snapshotRepository>
++    </distributionManagement>
++</project>
+\ No newline at end of file
+Index: com/github/llyb120/json/1.1.17/json-1.1.17.jar.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.17/json-1.1.17.jar.lastUpdated b/com/github/llyb120/json/1.1.17/json-1.1.17.jar.lastUpdated
+new file mode 100644
+--- /dev/null	(date 1598802006000)
++++ b/com/github/llyb120/json/1.1.17/json-1.1.17.jar.lastUpdated	(date 1598802006000)
+@@ -0,0 +1,7 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Sun Aug 30 23:40:04 CST 2020
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1598802004098
++https\://maven.aliyun.com/nexus/content/groups/public/.error=
++http\://106.52.185.146\:8081/repository/maven-public/.lastUpdated=1598802004388
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=
++https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1598802003728
+Index: com/github/llyb120/json/1.1.17/json-1.1.17.pom.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.17/json-1.1.17.pom.lastUpdated b/com/github/llyb120/json/1.1.17/json-1.1.17.pom.lastUpdated
+new file mode 100644
+--- /dev/null	(date 1598802002000)
++++ b/com/github/llyb120/json/1.1.17/json-1.1.17.pom.lastUpdated	(date 1598802002000)
+@@ -0,0 +1,7 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Sun Aug 30 23:40:00 CST 2020
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1598801997815
++https\://maven.aliyun.com/nexus/content/groups/public/.error=
++http\://106.52.185.146\:8081/repository/maven-public/.lastUpdated=1598802000455
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=
++https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1598801997397
+Index: com/github/llyb120/nami-spring/0.0.11/_remote.repositories
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.11/_remote.repositories b/com/github/llyb120/nami-spring/0.0.11/_remote.repositories
+new file mode 100644
+--- /dev/null	(date 1593566244000)
++++ b/com/github/llyb120/nami-spring/0.0.11/_remote.repositories	(date 1593566244000)
+@@ -0,0 +1,4 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Wed Jul 01 09:17:23 CST 2020
++nami-spring-0.0.11.jar>rdc-releases=
++nami-spring-0.0.11.pom>rdc-releases=
+Index: com/github/llyb120/json/1.1.19/json-1.1.19.pom
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.19/json-1.1.19.pom b/com/github/llyb120/json/1.1.19/json-1.1.19.pom
+new file mode 100644
+--- /dev/null	(date 1604281682000)
++++ b/com/github/llyb120/json/1.1.19/json-1.1.19.pom	(date 1604281682000)
+@@ -0,0 +1,79 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++
++    <groupId>com.github.llyb120</groupId>
++    <artifactId>json</artifactId>
++    <version>1.1.19</version>
++    <build>
++        <plugins>
++            <plugin>
++                <groupId>org.apache.maven.plugins</groupId>
++                <artifactId>maven-compiler-plugin</artifactId>
++                <configuration>
++                    <source>8</source>
++                    <target>8</target>
++                </configuration>
++            </plugin>
++        </plugins>
++    </build>
++
++    <dependencies>
++
++
++        <!-- https://mvnrepository.com/artifact/org.mongodb/mongodb-driver -->
++<!--        <dependency>-->
++<!--            <groupId>org.mongodb</groupId>-->
++<!--            <artifactId>mongodb-driver</artifactId>-->
++<!--            <version>3.12.0</version>-->
++<!--            <scope>provided</scope>-->
++<!--        </dependency>-->
++
++        <dependency>
++            <groupId>org.mongodb</groupId>
++            <artifactId>bson</artifactId>
++            <version>3.12.0</version>
++            <scope>compile</scope>
++        </dependency>
++<dependency>
++            <groupId>junit</groupId>
++            <artifactId>junit</artifactId>
++            <version>4.13-rc-2</version>
++            <scope>test</scope>
++        </dependency>
++
++        <!-- https://mvnrepository.com/artifact/cn.hutool/hutool-all -->
++        <dependency>
++            <groupId>cn.hutool</groupId>
++            <artifactId>hutool-all</artifactId>
++            <version>5.1.2</version>
++            <scope>test</scope>
++        </dependency>
++
++    </dependencies>
++
++    <distributionManagement>
++        <snapshotRepository>
++            <id>maven-snapshots</id>
++            <name>maven-snapshots-repository</name>
++            <url>http://106.52.185.146:8081/repository/maven-snapshots/</url>
++        </snapshotRepository>
++        <repository>
++            <id>maven-releases</id>
++            <name>maven-releases-repository</name>
++            <url>http://106.52.185.146:8081/repository/maven-releases/</url>
++        </repository>
++    </distributionManagement>
++<!--    <distributionManagement>-->
++<!--        <repository>-->
++<!--            <id>rdc-releases</id>-->
++<!--            <url>https://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/</url>-->
++<!--        </repository>-->
++<!--        <snapshotRepository>-->
++<!--            <id>rdc-snapshots</id>-->
++<!--            <url>https://repo.rdc.aliyun.com/repository/75714-snapshot-t7sMIW/</url>-->
++<!--        </snapshotRepository>-->
++<!--    </distributionManagement>-->
++</project>
+Index: com/github/llyb120/nami-spring/0.0.15/nami-spring-0.0.15.pom.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.15/nami-spring-0.0.15.pom.lastUpdated b/com/github/llyb120/nami-spring/0.0.15/nami-spring-0.0.15.pom.lastUpdated
+new file mode 100644
+--- /dev/null	(date 1596513108000)
++++ b/com/github/llyb120/nami-spring/0.0.15/nami-spring-0.0.15.pom.lastUpdated	(date 1596513108000)
+@@ -0,0 +1,7 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Tue Aug 04 11:51:46 CST 2020
++https\://repo.maven.apache.org/maven2/.lastUpdated=1596512944595
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1596513106954
++https\://maven.aliyun.com/nexus/content/groups/public/.error=
++https\://repo.maven.apache.org/maven2/.error=
++https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1596513105504
+Index: com/github/llyb120/json/1.1.19/_remote.repositories
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.19/_remote.repositories b/com/github/llyb120/json/1.1.19/_remote.repositories
+new file mode 100644
+--- /dev/null	(date 1604281704000)
++++ b/com/github/llyb120/json/1.1.19/_remote.repositories	(date 1604281704000)
+@@ -0,0 +1,4 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Mon Nov 02 09:48:23 CST 2020
++json-1.1.19.jar>nexus=
++json-1.1.19.pom>nexus=
+Index: com/github/llyb120/nami-spring/0.0.15/nami-spring-0.0.15.pom.sha1
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.15/nami-spring-0.0.15.pom.sha1 b/com/github/llyb120/nami-spring/0.0.15/nami-spring-0.0.15.pom.sha1
+new file mode 100644
+--- /dev/null	(date 1596513108000)
++++ b/com/github/llyb120/nami-spring/0.0.15/nami-spring-0.0.15.pom.sha1	(date 1596513108000)
+@@ -0,0 +1,1 @@
++cfc3a5f6a35ee90fee7d6a1a4a490e8ff3755ba2
+\ No newline at end of file
+Index: com/github/llyb120/nami-spring/0.0.15/nami-spring-0.0.15.jar.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.15/nami-spring-0.0.15.jar.lastUpdated b/com/github/llyb120/nami-spring/0.0.15/nami-spring-0.0.15.jar.lastUpdated
+new file mode 100644
+--- /dev/null	(date 1596513112000)
++++ b/com/github/llyb120/nami-spring/0.0.15/nami-spring-0.0.15.jar.lastUpdated	(date 1596513112000)
+@@ -0,0 +1,7 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Tue Aug 04 11:51:51 CST 2020
++https\://repo.maven.apache.org/maven2/.lastUpdated=1596512986106
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1596513111055
++https\://maven.aliyun.com/nexus/content/groups/public/.error=
++https\://repo.maven.apache.org/maven2/.error=
++https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1596513110432
+Index: com/github/llyb120/json/maven-metadata-local.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/maven-metadata-local.xml b/com/github/llyb120/json/maven-metadata-local.xml
+new file mode 100644
+--- /dev/null	(date 1598267226000)
++++ b/com/github/llyb120/json/maven-metadata-local.xml	(date 1598267226000)
+@@ -0,0 +1,14 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<metadata>
++  <groupId>com.github.llyb120</groupId>
++  <artifactId>json</artifactId>
++  <versioning>
++    <release>1.1.16</release>
++    <versions>
++      <version>1.1.14</version>
++      <version>1.1.15</version>
++      <version>1.1.16</version>
++    </versions>
++    <lastUpdated>20200824110705</lastUpdated>
++  </versioning>
++</metadata>
+Index: com/github/llyb120/nami-spring/0.0.19/nami-spring-0.0.19.jar.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.19/nami-spring-0.0.19.jar.lastUpdated b/com/github/llyb120/nami-spring/0.0.19/nami-spring-0.0.19.jar.lastUpdated
+new file mode 100644
+--- /dev/null	(date 1596788312000)
++++ b/com/github/llyb120/nami-spring/0.0.19/nami-spring-0.0.19.jar.lastUpdated	(date 1596788312000)
+@@ -0,0 +1,8 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Fri Aug 07 16:18:31 CST 2020
++https\://repo.maven.apache.org/maven2/.lastUpdated=1596504574074
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1596788311465
++https\://maven.aliyun.com/nexus/content/groups/public/.error=
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=
++https\://repo.maven.apache.org/maven2/.error=
++https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1596788311034
+Index: com/github/llyb120/json/resolver-status.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>ISO-8859-1
+===================================================================
+diff --git a/com/github/llyb120/json/resolver-status.properties b/com/github/llyb120/json/resolver-status.properties
+new file mode 100644
+--- /dev/null	(date 1628819772654)
++++ b/com/github/llyb120/json/resolver-status.properties	(date 1628819772654)
+@@ -0,0 +1,21 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Fri Aug 13 09:56:12 CST 2021
++maven-metadata-nexus.xml.error=
++maven-metadata-alfresco-public-snapshots.xml.lastUpdated=1596504223831
++maven-metadata-snapshots.xml.lastUpdated=1628819771471
++maven-metadata-Maven\ Central.xml/@default-Maven\ Central-http\://repo1.maven.org/maven2/.lastUpdated=1596511890205
++maven-metadata-alfresco-public.xml.lastUpdated=1596504224009
++maven-metadata-Maven\ Central.xml.error=Could not transfer metadata com.github.llyb120\:json/maven-metadata.xml from/to Maven Central (http\://repo1.maven.org/maven2)\: Transfer failed for http\://repo1.maven.org/maven2/com/github/llyb120/json/maven-metadata.xml 501 HTTPS Required
++maven-metadata-central.xml.lastUpdated=1628819771537
++maven-metadata-nexus.xml.lastUpdated=1596504223887
++maven-metadata-rdc-releases.xml.lastUpdated=1628819772654
++maven-metadata-maven-ali.xml.error=
++maven-metadata-maven-ali.xml.lastUpdated=1596512382303
++maven-metadata-alfresco-public.xml.error=
++maven-metadata-central.xml.error=
++maven-metadata-spring-milestones.xml/@default-spring-milestones-https\://repo.spring.io/libs-milestone/.lastUpdated=1628063998104
++maven-metadata-rdc-snapshots.xml.lastUpdated=1628819771619
++maven-metadata-alfresco-public-snapshots.xml.error=
++maven-metadata-spring-milestones.xml.error=Could not transfer metadata com.github.llyb120\:json/maven-metadata.xml from/to spring-milestones (https\://repo.spring.io/libs-milestone)\: Authentication failed for https\://repo.spring.io/libs-milestone/com/github/llyb120/json/maven-metadata.xml 401 Unauthorized
++maven-metadata-rdc-snapshots.xml.error=
++maven-metadata-snapshots.xml.error=
+Index: com/github/llyb120/nami-spring/0.0.19/nami-spring-0.0.19.pom.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.19/nami-spring-0.0.19.pom.lastUpdated b/com/github/llyb120/nami-spring/0.0.19/nami-spring-0.0.19.pom.lastUpdated
+new file mode 100644
+--- /dev/null	(date 1596788312000)
++++ b/com/github/llyb120/nami-spring/0.0.19/nami-spring-0.0.19.pom.lastUpdated	(date 1596788312000)
+@@ -0,0 +1,8 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Fri Aug 07 16:18:30 CST 2020
++https\://repo.maven.apache.org/maven2/.lastUpdated=1596504489327
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1596788310120
++https\://maven.aliyun.com/nexus/content/groups/public/.error=
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=
++https\://repo.maven.apache.org/maven2/.error=
++https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1596788309509
+Index: com/github/llyb120/json/1.1.19/json-1.1.19.jar.sha1
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.19/json-1.1.19.jar.sha1 b/com/github/llyb120/json/1.1.19/json-1.1.19.jar.sha1
+new file mode 100644
+--- /dev/null	(date 1604281704000)
++++ b/com/github/llyb120/json/1.1.19/json-1.1.19.jar.sha1	(date 1604281704000)
+@@ -0,0 +1,1 @@
++57ca9fb7f2ce9d2bdeaac33b2f78f4827a78dd6e
+\ No newline at end of file
+Index: com/github/llyb120/json/1.1.19/json-1.1.19.pom.sha1
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.19/json-1.1.19.pom.sha1 b/com/github/llyb120/json/1.1.19/json-1.1.19.pom.sha1
+new file mode 100644
+--- /dev/null	(date 1604281686000)
++++ b/com/github/llyb120/json/1.1.19/json-1.1.19.pom.sha1	(date 1604281686000)
+@@ -0,0 +1,1 @@
++a4c34ab37b1aa19e7371a5bd83480d7e81e57bb9
+\ No newline at end of file
+Index: com/github/llyb120/json/1.1.18/json-1.1.18.jar.sha1
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.18/json-1.1.18.jar.sha1 b/com/github/llyb120/json/1.1.18/json-1.1.18.jar.sha1
+new file mode 100644
+--- /dev/null	(date 1599293160000)
++++ b/com/github/llyb120/json/1.1.18/json-1.1.18.jar.sha1	(date 1599293160000)
+@@ -0,0 +1,1 @@
++ad0bd9b3aae83c51fc7c46bb9f085282e1fc2db1
+\ No newline at end of file
+Index: com/github/llyb120/json/1.1.18/json-1.1.18.pom.sha1
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.18/json-1.1.18.pom.sha1 b/com/github/llyb120/json/1.1.18/json-1.1.18.pom.sha1
+new file mode 100644
+--- /dev/null	(date 1599293152000)
++++ b/com/github/llyb120/json/1.1.18/json-1.1.18.pom.sha1	(date 1599293152000)
+@@ -0,0 +1,1 @@
++0a0f1f0fd4f742b7ca947f07bb67398db79222fa
+\ No newline at end of file
+Index: com/github/llyb120/nami-spring/0.0.15/nami-spring-0.0.15.pom
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.15/nami-spring-0.0.15.pom b/com/github/llyb120/nami-spring/0.0.15/nami-spring-0.0.15.pom
+new file mode 100644
+--- /dev/null	(date 1596513108000)
++++ b/com/github/llyb120/nami-spring/0.0.15/nami-spring-0.0.15.pom	(date 1596513108000)
+@@ -0,0 +1,84 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++
++    <parent>
++        <groupId>org.springframework.boot</groupId>
++        <artifactId>spring-boot-starter-parent</artifactId>
++        <version>2.0.4.RELEASE</version>
++    </parent>
++
++    <groupId>com.github.llyb120</groupId>
++    <artifactId>nami-spring</artifactId>
++    <version>0.0.15</version>
++
++
++    <dependencies>
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter</artifactId>
++            <scope>provided</scope>
++        </dependency>
++
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-web</artifactId>
++            <scope>provided</scope>
++        </dependency>
++
++
++        <!-- https://mvnrepository.com/artifact/cn.hutool/hutool-all -->
++        <dependency>
++            <groupId>cn.hutool</groupId>
++            <artifactId>hutool-all</artifactId>
++            <version>5.1.2</version>
++        </dependency>
++
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-configuration-processor</artifactId>
++            <optional>true</optional>
++        </dependency>
++
++        <dependency>
++            <groupId>com.github.llyb120</groupId>
++            <artifactId>json</artifactId>
++            <version>1.1.11</version>
++        </dependency>
++
++        <dependency>
++            <groupId>org.tuckey</groupId>
++            <artifactId>urlrewritefilter</artifactId>
++            <version>4.0.3</version>
++        </dependency>
++
++        <dependency>
++            <groupId>com.ibeetl</groupId>
++            <artifactId>beetl-framework-starter</artifactId>
++            <version>1.1.60.RELEASE</version>
++            <scope>provided</scope>
++        </dependency>
++
++        <!-- https://mvnrepository.com/artifact/org.mongodb/mongo-java-driver -->
++        <dependency>
++            <groupId>org.mongodb</groupId>
++            <artifactId>mongo-java-driver</artifactId>
++            <version>3.11.0</version>
++            <scope>provided</scope>
++        </dependency>
++
++    </dependencies>
++
++    <distributionManagement>
++        <repository>
++            <id>rdc-releases</id>
++            <url>https://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/</url>
++        </repository>
++        <snapshotRepository>
++            <id>rdc-snapshots</id>
++            <url>https://repo.rdc.aliyun.com/repository/75714-snapshot-t7sMIW/</url>
++        </snapshotRepository>
++    </distributionManagement>
++</project>
+\ No newline at end of file
+Index: com/github/llyb120/nami-spring/0.0.15/nami-spring-0.0.15.jar.sha1
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.15/nami-spring-0.0.15.jar.sha1 b/com/github/llyb120/nami-spring/0.0.15/nami-spring-0.0.15.jar.sha1
+new file mode 100644
+--- /dev/null	(date 1596513112000)
++++ b/com/github/llyb120/nami-spring/0.0.15/nami-spring-0.0.15.jar.sha1	(date 1596513112000)
+@@ -0,0 +1,1 @@
++504478ba1da7ad550b1c62ef68a52e0a46ca8f90
+\ No newline at end of file
+Index: com/github/llyb120/nami-spring/0.0.15/_remote.repositories
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.15/_remote.repositories b/com/github/llyb120/nami-spring/0.0.15/_remote.repositories
+new file mode 100644
+--- /dev/null	(date 1596513112000)
++++ b/com/github/llyb120/nami-spring/0.0.15/_remote.repositories	(date 1596513112000)
+@@ -0,0 +1,4 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Tue Aug 04 11:51:51 CST 2020
++nami-spring-0.0.15.jar>rdc-releases=
++nami-spring-0.0.15.pom>rdc-releases=
+Index: com/github/llyb120/json/1.1.18/json-1.1.18.pom.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.\r\n#Fri Oct 08 16:32:32 CST 2021\r\nhttps\\://repo.maven.apache.org/maven2/.lastUpdated=1633681951851\r\nhttps\\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1633681952135\r\nhttps\\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=\r\nhttp\\://106.52.185.146\\:8081/repository/maven-public/.error=Could not transfer artifact com.github.llyb120\\:json\\:pom\\:1.1.18 from/to nexus (http\\://106.52.185.146\\:8081/repository/maven-public/)\\: Transfer failed for http\\://106.52.185.146\\:8081/repository/maven-public/com/github/llyb120/json/1.1.18/json-1.1.18.pom\r\nhttps\\://repo.maven.apache.org/maven2/.error=\r\n@default-nexus-http\\://106.52.185.146\\:8081/repository/maven-public/.lastUpdated=1633681951563\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.18/json-1.1.18.pom.lastUpdated b/com/github/llyb120/json/1.1.18/json-1.1.18.pom.lastUpdated
+--- a/com/github/llyb120/json/1.1.18/json-1.1.18.pom.lastUpdated	(revision 0bcbe84f81707f70e88c77e2bd32d51f62d83cbd)
++++ b/com/github/llyb120/json/1.1.18/json-1.1.18.pom.lastUpdated	(date 1599293156000)
+@@ -1,8 +1,7 @@
+ #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+-#Fri Oct 08 16:32:32 CST 2021
+-https\://repo.maven.apache.org/maven2/.lastUpdated=1633681951851
+-https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1633681952135
++#Sat Sep 05 16:05:54 CST 2020
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1599293150417
++https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1599293149773
+ https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=
+-http\://106.52.185.146\:8081/repository/maven-public/.error=Could not transfer artifact com.github.llyb120\:json\:pom\:1.1.18 from/to nexus (http\://106.52.185.146\:8081/repository/maven-public/)\: Transfer failed for http\://106.52.185.146\:8081/repository/maven-public/com/github/llyb120/json/1.1.18/json-1.1.18.pom
+-https\://repo.maven.apache.org/maven2/.error=
+-@default-nexus-http\://106.52.185.146\:8081/repository/maven-public/.lastUpdated=1633681951563
++https\://maven.aliyun.com/nexus/content/groups/public/.error=
++http\://106.52.185.146\:8081/repository/maven-public/.lastUpdated=1599293154401
+Index: com/github/llyb120/nami-spring/0.0.20/nami-spring-0.0.20.pom.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.20/nami-spring-0.0.20.pom.lastUpdated b/com/github/llyb120/nami-spring/0.0.20/nami-spring-0.0.20.pom.lastUpdated
+new file mode 100644
+--- /dev/null	(date 1596504628000)
++++ b/com/github/llyb120/nami-spring/0.0.20/nami-spring-0.0.20.pom.lastUpdated	(date 1596504628000)
+@@ -0,0 +1,4 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Tue Aug 04 09:30:26 CST 2020
++https\://repo.maven.apache.org/maven2/.lastUpdated=1596504626805
++https\://repo.maven.apache.org/maven2/.error=
+Index: com/github/llyb120/json/1.1.19/json-1.1.19.jar.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.\r\n#Thu Sep 30 10:49:03 CST 2021\r\nhttps\\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1632970143218\r\nhttps\\://maven.aliyun.com/nexus/content/groups/public/.error=\r\nhttps\\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=\r\nhttps\\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1632970142183\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.19/json-1.1.19.jar.lastUpdated b/com/github/llyb120/json/1.1.19/json-1.1.19.jar.lastUpdated
+--- a/com/github/llyb120/json/1.1.19/json-1.1.19.jar.lastUpdated	(revision 0bcbe84f81707f70e88c77e2bd32d51f62d83cbd)
++++ b/com/github/llyb120/json/1.1.19/json-1.1.19.jar.lastUpdated	(date 1604281704000)
+@@ -1,6 +1,7 @@
+ #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+-#Thu Sep 30 10:49:03 CST 2021
+-https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1632970143218
++#Mon Nov 02 09:48:23 CST 2020
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1604281691566
+ https\://maven.aliyun.com/nexus/content/groups/public/.error=
++http\://106.52.185.146\:8081/repository/maven-public/.lastUpdated=1604281703117
+ https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=
+-https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1632970142183
++https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1604281690750
+Index: com/github/llyb120/nami-spring/0.0.20/nami-spring-0.0.20.pom
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.20/nami-spring-0.0.20.pom b/com/github/llyb120/nami-spring/0.0.20/nami-spring-0.0.20.pom
+new file mode 100644
+--- /dev/null	(date 1596504748000)
++++ b/com/github/llyb120/nami-spring/0.0.20/nami-spring-0.0.20.pom	(date 1596504748000)
+@@ -0,0 +1,106 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++
++    <parent>
++        <groupId>org.springframework.boot</groupId>
++        <artifactId>spring-boot-starter-parent</artifactId>
++        <version>2.0.4.RELEASE</version>
++    </parent>
++
++    <groupId>com.github.llyb120</groupId>
++    <artifactId>nami-spring</artifactId>
++    <version>0.0.20</version>
++
++
++    <dependencies>
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter</artifactId>
++            <scope>provided</scope>
++        </dependency>
++
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-web</artifactId>
++            <scope>provided</scope>
++        </dependency>
++
++
++        <!-- https://mvnrepository.com/artifact/cn.hutool/hutool-all -->
++        <dependency>
++            <groupId>cn.hutool</groupId>
++            <artifactId>hutool-all</artifactId>
++            <version>5.1.2</version>
++        </dependency>
++
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-configuration-processor</artifactId>
++            <optional>true</optional>
++        </dependency>
++
++        <dependency>
++            <groupId>com.github.llyb120</groupId>
++            <artifactId>json</artifactId>
++            <version>1.1.14</version>
++        </dependency>
++
++        <dependency>
++            <groupId>org.tuckey</groupId>
++            <artifactId>urlrewritefilter</artifactId>
++            <version>4.0.3</version>
++        </dependency>
++
++        <dependency>
++            <groupId>com.ibeetl</groupId>
++            <artifactId>beetl-framework-starter</artifactId>
++            <version>1.1.60.RELEASE</version>
++            <scope>provided</scope>
++        </dependency>
++
++        <!-- https://mvnrepository.com/artifact/org.mongodb/mongo-java-driver -->
++        <dependency>
++            <groupId>org.mongodb</groupId>
++            <artifactId>mongo-java-driver</artifactId>
++            <version>3.11.0</version>
++            <scope>provided</scope>
++        </dependency>
++
++        <!-- https://mvnrepository.com/artifact/org.eclipse.jdt/ecj -->
++        <dependency>
++            <groupId>org.eclipse.jdt</groupId>
++            <artifactId>ecj</artifactId>
++            <version>3.22.0</version>
++        </dependency>
++
++        <!-- swagger -->
++        <dependency>
++            <groupId>io.springfox</groupId>
++            <artifactId>springfox-swagger2</artifactId>
++            <version>2.9.2</version>
++            <scope>provided</scope>
++        </dependency>
++        <dependency>
++            <groupId>io.springfox</groupId>
++            <artifactId>springfox-swagger-ui</artifactId>
++            <version>2.9.2</version>
++            <scope>provided</scope>
++        </dependency>
++
++
++    </dependencies>
++
++    <distributionManagement>
++        <repository>
++            <id>rdc-releases</id>
++            <url>https://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/</url>
++        </repository>
++        <snapshotRepository>
++            <id>rdc-snapshots</id>
++            <url>https://repo.rdc.aliyun.com/repository/75714-snapshot-t7sMIW/</url>
++        </snapshotRepository>
++    </distributionManagement>
++</project>
+\ No newline at end of file
+Index: com/github/llyb120/json/1.1.15/json-1.1.15.pom.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.\r\n#Thu Sep 30 10:50:00 CST 2021\r\nhttps\\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1632970200218\r\nhttps\\://maven.aliyun.com/nexus/content/groups/public/.error=\r\nhttps\\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1632970199857\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.15/json-1.1.15.pom.lastUpdated b/com/github/llyb120/json/1.1.15/json-1.1.15.pom.lastUpdated
+--- a/com/github/llyb120/json/1.1.15/json-1.1.15.pom.lastUpdated	(revision 0bcbe84f81707f70e88c77e2bd32d51f62d83cbd)
++++ b/com/github/llyb120/json/1.1.15/json-1.1.15.pom.lastUpdated	(date 1597306984000)
+@@ -1,5 +1,4 @@
+ #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+-#Thu Sep 30 10:50:00 CST 2021
+-https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1632970200218
+-https\://maven.aliyun.com/nexus/content/groups/public/.error=
+-https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1632970199857
++#Thu Aug 13 16:23:03 CST 2020
++https\://repo.maven.apache.org/maven2/.lastUpdated=1597306983330
++https\://repo.maven.apache.org/maven2/.error=
+Index: com/github/llyb120/json/1.1.18/json-1.1.18.jar.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.\r\n#Fri Oct 08 16:37:24 CST 2021\r\nhttps\\://repo.maven.apache.org/maven2/.lastUpdated=1633682244069\r\nhttps\\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1633682244723\r\nhttps\\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=\r\nhttp\\://106.52.185.146\\:8081/repository/maven-public/.error=Could not transfer artifact com.github.llyb120\\:json\\:jar\\:1.1.18 from/to nexus (http\\://106.52.185.146\\:8081/repository/maven-public/)\\: Transfer failed for http\\://106.52.185.146\\:8081/repository/maven-public/com/github/llyb120/json/1.1.18/json-1.1.18.jar\r\nhttps\\://repo.maven.apache.org/maven2/.error=\r\n@default-nexus-http\\://106.52.185.146\\:8081/repository/maven-public/.lastUpdated=1633682211360\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.18/json-1.1.18.jar.lastUpdated b/com/github/llyb120/json/1.1.18/json-1.1.18.jar.lastUpdated
+--- a/com/github/llyb120/json/1.1.18/json-1.1.18.jar.lastUpdated	(revision 0bcbe84f81707f70e88c77e2bd32d51f62d83cbd)
++++ b/com/github/llyb120/json/1.1.18/json-1.1.18.jar.lastUpdated	(date 1599293160000)
+@@ -1,8 +1,7 @@
+ #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+-#Fri Oct 08 16:37:24 CST 2021
+-https\://repo.maven.apache.org/maven2/.lastUpdated=1633682244069
+-https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1633682244723
++#Sat Sep 05 16:05:59 CST 2020
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1599293159157
++https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1599293158611
+ https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=
+-http\://106.52.185.146\:8081/repository/maven-public/.error=Could not transfer artifact com.github.llyb120\:json\:jar\:1.1.18 from/to nexus (http\://106.52.185.146\:8081/repository/maven-public/)\: Transfer failed for http\://106.52.185.146\:8081/repository/maven-public/com/github/llyb120/json/1.1.18/json-1.1.18.jar
+-https\://repo.maven.apache.org/maven2/.error=
+-@default-nexus-http\://106.52.185.146\:8081/repository/maven-public/.lastUpdated=1633682211360
++https\://maven.aliyun.com/nexus/content/groups/public/.error=
++http\://106.52.185.146\:8081/repository/maven-public/.lastUpdated=1599293159630
+Index: com/github/llyb120/nami-spring/0.0.20/nami-spring-0.0.20.jar.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.20/nami-spring-0.0.20.jar.lastUpdated b/com/github/llyb120/nami-spring/0.0.20/nami-spring-0.0.20.jar.lastUpdated
+new file mode 100644
+--- /dev/null	(date 1596504628000)
++++ b/com/github/llyb120/nami-spring/0.0.20/nami-spring-0.0.20.jar.lastUpdated	(date 1596504628000)
+@@ -0,0 +1,4 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Tue Aug 04 09:30:27 CST 2020
++https\://repo.maven.apache.org/maven2/.lastUpdated=1596504627567
++https\://repo.maven.apache.org/maven2/.error=
+Index: com/github/llyb120/nami-spring/0.0.32/nami-spring-0.0.32.pom.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.\r\n#Fri Oct 08 16:31:41 CST 2021\r\nhttps\\://repo.maven.apache.org/maven2/.lastUpdated=1633681901074\r\nhttps\\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1633681901392\r\nhttps\\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=\r\nhttp\\://106.52.185.146\\:8081/repository/maven-public/.error=Could not transfer artifact com.github.llyb120\\:nami-spring\\:pom\\:0.0.32 from/to nexus (http\\://106.52.185.146\\:8081/repository/maven-public/)\\: Transfer failed for http\\://106.52.185.146\\:8081/repository/maven-public/com/github/llyb120/nami-spring/0.0.32/nami-spring-0.0.32.pom\r\nhttps\\://repo.maven.apache.org/maven2/.error=\r\n@default-nexus-http\\://106.52.185.146\\:8081/repository/maven-public/.lastUpdated=1633681900798\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.32/nami-spring-0.0.32.pom.lastUpdated b/com/github/llyb120/nami-spring/0.0.32/nami-spring-0.0.32.pom.lastUpdated
+--- a/com/github/llyb120/nami-spring/0.0.32/nami-spring-0.0.32.pom.lastUpdated	(revision 0bcbe84f81707f70e88c77e2bd32d51f62d83cbd)
++++ b/com/github/llyb120/nami-spring/0.0.32/nami-spring-0.0.32.pom.lastUpdated	(date 1616849585293)
+@@ -1,8 +1,8 @@
+ #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+-#Fri Oct 08 16:31:41 CST 2021
+-https\://repo.maven.apache.org/maven2/.lastUpdated=1633681901074
+-https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1633681901392
++#Sat Mar 27 20:53:05 CST 2021
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1616849564235
++https\://maven.aliyun.com/nexus/content/groups/public/.error=
+ https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=
+ http\://106.52.185.146\:8081/repository/maven-public/.error=Could not transfer artifact com.github.llyb120\:nami-spring\:pom\:0.0.32 from/to nexus (http\://106.52.185.146\:8081/repository/maven-public/)\: Transfer failed for http\://106.52.185.146\:8081/repository/maven-public/com/github/llyb120/nami-spring/0.0.32/nami-spring-0.0.32.pom
+-https\://repo.maven.apache.org/maven2/.error=
+-@default-nexus-http\://106.52.185.146\:8081/repository/maven-public/.lastUpdated=1633681900798
++https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1616849563615
++@default-nexus-http\://106.52.185.146\:8081/repository/maven-public/.lastUpdated=1616849585289
+Index: com/github/llyb120/nami-spring/0.0.22/_remote.repositories
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.\r\n#Thu Sep 30 10:50:28 CST 2021\r\nnami-spring-0.0.22.jar>rdc-releases=\r\nnami-spring-0.0.22.pom>rdc-releases=\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.22/_remote.repositories b/com/github/llyb120/nami-spring/0.0.22/_remote.repositories
+--- a/com/github/llyb120/nami-spring/0.0.22/_remote.repositories	(revision 0bcbe84f81707f70e88c77e2bd32d51f62d83cbd)
++++ b/com/github/llyb120/nami-spring/0.0.22/_remote.repositories	(date 1597307034000)
+@@ -1,4 +1,4 @@
+ #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+-#Thu Sep 30 10:50:28 CST 2021
+-nami-spring-0.0.22.jar>rdc-releases=
+-nami-spring-0.0.22.pom>rdc-releases=
++#Thu Aug 13 16:23:53 CST 2020
++nami-spring-0.0.22.jar>=
++nami-spring-0.0.22.pom>=
+Index: com/github/llyb120/json/1.1.19/json-1.1.19.pom.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.\r\n#Thu Sep 30 10:47:32 CST 2021\r\nhttps\\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1632970052073\r\nhttps\\://maven.aliyun.com/nexus/content/groups/public/.error=\r\nhttps\\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=\r\nhttps\\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1632970051783\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.19/json-1.1.19.pom.lastUpdated b/com/github/llyb120/json/1.1.19/json-1.1.19.pom.lastUpdated
+--- a/com/github/llyb120/json/1.1.19/json-1.1.19.pom.lastUpdated	(revision 0bcbe84f81707f70e88c77e2bd32d51f62d83cbd)
++++ b/com/github/llyb120/json/1.1.19/json-1.1.19.pom.lastUpdated	(date 1604281686000)
+@@ -1,6 +1,7 @@
+ #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+-#Thu Sep 30 10:47:32 CST 2021
+-https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1632970052073
++#Mon Nov 02 09:48:05 CST 2020
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1604281674637
+ https\://maven.aliyun.com/nexus/content/groups/public/.error=
++http\://106.52.185.146\:8081/repository/maven-public/.lastUpdated=1604281685088
+ https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=
+-https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1632970051783
++https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1604281674296
+Index: com/github/llyb120/nami-spring/0.0.32/nami-spring-0.0.32.jar.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.\r\n#Fri Oct 08 16:38:27 CST 2021\r\nhttps\\://repo.maven.apache.org/maven2/.lastUpdated=1633682306687\r\nhttps\\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1633682307367\r\nhttps\\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=\r\nhttp\\://106.52.185.146\\:8081/repository/maven-public/.error=Could not transfer artifact com.github.llyb120\\:nami-spring\\:jar\\:0.0.32 from/to nexus (http\\://106.52.185.146\\:8081/repository/maven-public/)\\: Transfer failed for http\\://106.52.185.146\\:8081/repository/maven-public/com/github/llyb120/nami-spring/0.0.32/nami-spring-0.0.32.jar\r\nhttps\\://repo.maven.apache.org/maven2/.error=\r\n@default-nexus-http\\://106.52.185.146\\:8081/repository/maven-public/.lastUpdated=1633682277901\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.32/nami-spring-0.0.32.jar.lastUpdated b/com/github/llyb120/nami-spring/0.0.32/nami-spring-0.0.32.jar.lastUpdated
+--- a/com/github/llyb120/nami-spring/0.0.32/nami-spring-0.0.32.jar.lastUpdated	(revision 0bcbe84f81707f70e88c77e2bd32d51f62d83cbd)
++++ b/com/github/llyb120/nami-spring/0.0.32/nami-spring-0.0.32.jar.lastUpdated	(date 1616849607844)
+@@ -1,8 +1,8 @@
+ #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+-#Fri Oct 08 16:38:27 CST 2021
+-https\://repo.maven.apache.org/maven2/.lastUpdated=1633682306687
+-https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1633682307367
++#Sat Mar 27 20:53:27 CST 2021
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1616849586791
++https\://maven.aliyun.com/nexus/content/groups/public/.error=
+ https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=
+ http\://106.52.185.146\:8081/repository/maven-public/.error=Could not transfer artifact com.github.llyb120\:nami-spring\:jar\:0.0.32 from/to nexus (http\://106.52.185.146\:8081/repository/maven-public/)\: Transfer failed for http\://106.52.185.146\:8081/repository/maven-public/com/github/llyb120/nami-spring/0.0.32/nami-spring-0.0.32.jar
+-https\://repo.maven.apache.org/maven2/.error=
+-@default-nexus-http\://106.52.185.146\:8081/repository/maven-public/.lastUpdated=1633682277901
++https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1616849586432
++@default-nexus-http\://106.52.185.146\:8081/repository/maven-public/.lastUpdated=1616849607839
+Index: com/github/llyb120/json/maven-metadata-rdc-releases.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/maven-metadata-rdc-releases.xml b/com/github/llyb120/json/maven-metadata-rdc-releases.xml
+new file mode 100644
+--- /dev/null	(date 1628819772290)
++++ b/com/github/llyb120/json/maven-metadata-rdc-releases.xml	(date 1628819772290)
+@@ -0,0 +1,33 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<metadata>
++  <groupId>com.github.llyb120</groupId>
++  <artifactId>json</artifactId>
++  <versioning>
++    <release>1.1.15</release>
++    <versions>
++      <version>1.0.9</version>
++      <version>1.0.10</version>
++      <version>1.0.11</version>
++      <version>1.1.0</version>
++      <version>1.1.01</version>
++      <version>1.0.12</version>
++      <version>1.1.0.1</version>
++      <version>1.1.1</version>
++      <version>1.1.2</version>
++      <version>1.1.3</version>
++      <version>1.1.4</version>
++      <version>1.1.5</version>
++      <version>1.1.6</version>
++      <version>1.1.7</version>
++      <version>1.1.8</version>
++      <version>1.1.9</version>
++      <version>1.1.10</version>
++      <version>1.1.11</version>
++      <version>1.1.12</version>
++      <version>1.1.13</version>
++      <version>1.1.14</version>
++      <version>1.1.15</version>
++    </versions>
++    <lastUpdated>20200813034640</lastUpdated>
++  </versioning>
++</metadata>
+Index: com/github/llyb120/json/maven-metadata-rdc-releases.xml.sha1
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/maven-metadata-rdc-releases.xml.sha1 b/com/github/llyb120/json/maven-metadata-rdc-releases.xml.sha1
+new file mode 100644
+--- /dev/null	(date 1628819772622)
++++ b/com/github/llyb120/json/maven-metadata-rdc-releases.xml.sha1	(date 1628819772622)
+@@ -0,0 +1,1 @@
++4d607d1d5d71f4f31caae2809e31e309093eaa69
+\ No newline at end of file
+Index: com/github/llyb120/nami-spring/0.0.20/_remote.repositories
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.20/_remote.repositories b/com/github/llyb120/nami-spring/0.0.20/_remote.repositories
+new file mode 100644
+--- /dev/null	(date 1596505016000)
++++ b/com/github/llyb120/nami-spring/0.0.20/_remote.repositories	(date 1596505016000)
+@@ -0,0 +1,4 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Tue Aug 04 09:36:55 CST 2020
++nami-spring-0.0.20.jar>=
++nami-spring-0.0.20.pom>=
+Index: com/github/llyb120/json/1.1.15/json-1.1.15.jar.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.\r\n#Thu Sep 30 10:50:28 CST 2021\r\nhttps\\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1632970228974\r\nhttps\\://maven.aliyun.com/nexus/content/groups/public/.error=\r\nhttps\\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1632970227871\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.15/json-1.1.15.jar.lastUpdated b/com/github/llyb120/json/1.1.15/json-1.1.15.jar.lastUpdated
+--- a/com/github/llyb120/json/1.1.15/json-1.1.15.jar.lastUpdated	(revision 0bcbe84f81707f70e88c77e2bd32d51f62d83cbd)
++++ b/com/github/llyb120/json/1.1.15/json-1.1.15.jar.lastUpdated	(date 1597306986000)
+@@ -1,5 +1,4 @@
+ #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+-#Thu Sep 30 10:50:28 CST 2021
+-https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1632970228974
+-https\://maven.aliyun.com/nexus/content/groups/public/.error=
+-https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1632970227871
++#Thu Aug 13 16:23:04 CST 2020
++https\://repo.maven.apache.org/maven2/.lastUpdated=1597306984385
++https\://repo.maven.apache.org/maven2/.error=
+Index: com/github/llyb120/json/1.1.15/_remote.repositories
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.\r\n#Thu Sep 30 10:50:28 CST 2021\r\njson-1.1.15.pom>rdc-releases=\r\njson-1.1.15.jar>rdc-releases=\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/json/1.1.15/_remote.repositories b/com/github/llyb120/json/1.1.15/_remote.repositories
+--- a/com/github/llyb120/json/1.1.15/_remote.repositories	(revision 0bcbe84f81707f70e88c77e2bd32d51f62d83cbd)
++++ b/com/github/llyb120/json/1.1.15/_remote.repositories	(date 1597307024000)
+@@ -1,4 +1,4 @@
+ #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+-#Thu Sep 30 10:50:28 CST 2021
+-json-1.1.15.pom>rdc-releases=
+-json-1.1.15.jar>rdc-releases=
++#Thu Aug 13 16:23:42 CST 2020
++json-1.1.15.pom>=
++json-1.1.15.jar>=
+Index: com/github/llyb120/nami-spring/0.0.22/nami-spring-0.0.22-sources.jar.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.22/nami-spring-0.0.22-sources.jar.lastUpdated b/com/github/llyb120/nami-spring/0.0.22/nami-spring-0.0.22-sources.jar.lastUpdated
+new file mode 100644
+--- /dev/null	(date 1597306854000)
++++ b/com/github/llyb120/nami-spring/0.0.22/nami-spring-0.0.22-sources.jar.lastUpdated	(date 1597306854000)
+@@ -0,0 +1,6 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Thu Aug 13 16:20:53 CST 2020
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1597306853157
++https\://maven.aliyun.com/nexus/content/groups/public/.error=
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=
++https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1597306852693
+Index: com/github/llyb120/nami-spring/0.0.23/nami-spring-0.0.23.jar.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.23/nami-spring-0.0.23.jar.lastUpdated b/com/github/llyb120/nami-spring/0.0.23/nami-spring-0.0.23.jar.lastUpdated
+new file mode 100644
+--- /dev/null	(date 1600603654000)
++++ b/com/github/llyb120/nami-spring/0.0.23/nami-spring-0.0.23.jar.lastUpdated	(date 1600603654000)
+@@ -0,0 +1,8 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Sun Sep 20 20:07:33 CST 2020
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1597306849458
++https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1597306849044
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=
++https\://repo.maven.apache.org/maven2/.lastUpdated=1600603653645
++https\://maven.aliyun.com/nexus/content/groups/public/.error=
++https\://repo.maven.apache.org/maven2/.error=
+Index: com/github/llyb120/nami-spring/0.0.23/nami-spring-0.0.23.pom.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.23/nami-spring-0.0.23.pom.lastUpdated b/com/github/llyb120/nami-spring/0.0.23/nami-spring-0.0.23.pom.lastUpdated
+new file mode 100644
+--- /dev/null	(date 1600603654000)
++++ b/com/github/llyb120/nami-spring/0.0.23/nami-spring-0.0.23.pom.lastUpdated	(date 1600603654000)
+@@ -0,0 +1,8 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Sun Sep 20 20:07:32 CST 2020
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1597306844929
++https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1597306844283
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=
++https\://repo.maven.apache.org/maven2/.lastUpdated=1600603652283
++https\://maven.aliyun.com/nexus/content/groups/public/.error=
++https\://repo.maven.apache.org/maven2/.error=
+Index: com/github/llyb120/house-api/0.0.2/house-api-0.0.2.jar.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.\r\n#Fri Oct 08 16:37:24 CST 2021\r\nhttps\\://repo.maven.apache.org/maven2/.lastUpdated=1633682244116\r\nhttps\\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1633682244725\r\nhttps\\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=\r\nhttp\\://106.52.185.146\\:8081/repository/maven-public/.error=Could not transfer artifact com.github.llyb120\\:house-api\\:jar\\:0.0.2 from/to nexus (http\\://106.52.185.146\\:8081/repository/maven-public/)\\: Transfer failed for http\\://106.52.185.146\\:8081/repository/maven-public/com/github/llyb120/house-api/0.0.2/house-api-0.0.2.jar\r\nhttps\\://repo.maven.apache.org/maven2/.error=\r\n@default-nexus-http\\://106.52.185.146\\:8081/repository/maven-public/.lastUpdated=1633682211366\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/house-api/0.0.2/house-api-0.0.2.jar.lastUpdated b/com/github/llyb120/house-api/0.0.2/house-api-0.0.2.jar.lastUpdated
+--- a/com/github/llyb120/house-api/0.0.2/house-api-0.0.2.jar.lastUpdated	(revision 0bcbe84f81707f70e88c77e2bd32d51f62d83cbd)
++++ b/com/github/llyb120/house-api/0.0.2/house-api-0.0.2.jar.lastUpdated	(date 1604588778000)
+@@ -1,8 +1,7 @@
+ #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+-#Fri Oct 08 16:37:24 CST 2021
+-https\://repo.maven.apache.org/maven2/.lastUpdated=1633682244116
+-https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1633682244725
++#Thu Nov 05 23:06:17 CST 2020
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1604588763725
++https\://maven.aliyun.com/nexus/content/groups/public/.error=
++http\://106.52.185.146\:8081/repository/maven-public/.lastUpdated=1604588777847
+ https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=
+-http\://106.52.185.146\:8081/repository/maven-public/.error=Could not transfer artifact com.github.llyb120\:house-api\:jar\:0.0.2 from/to nexus (http\://106.52.185.146\:8081/repository/maven-public/)\: Transfer failed for http\://106.52.185.146\:8081/repository/maven-public/com/github/llyb120/house-api/0.0.2/house-api-0.0.2.jar
+-https\://repo.maven.apache.org/maven2/.error=
+-@default-nexus-http\://106.52.185.146\:8081/repository/maven-public/.lastUpdated=1633682211366
++https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1604588763301
+Index: com/github/llyb120/nami-spring/0.0.21/nami-spring-0.0.21.pom
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.21/nami-spring-0.0.21.pom b/com/github/llyb120/nami-spring/0.0.21/nami-spring-0.0.21.pom
+new file mode 100644
+--- /dev/null	(date 1596984356000)
++++ b/com/github/llyb120/nami-spring/0.0.21/nami-spring-0.0.21.pom	(date 1596984356000)
+@@ -0,0 +1,106 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++
++    <parent>
++        <groupId>org.springframework.boot</groupId>
++        <artifactId>spring-boot-starter-parent</artifactId>
++        <version>2.0.4.RELEASE</version>
++    </parent>
++
++    <groupId>com.github.llyb120</groupId>
++    <artifactId>nami-spring</artifactId>
++    <version>0.0.21</version>
++
++
++    <dependencies>
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter</artifactId>
++            <scope>provided</scope>
++        </dependency>
++
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-web</artifactId>
++            <scope>provided</scope>
++        </dependency>
++
++
++        <!-- https://mvnrepository.com/artifact/cn.hutool/hutool-all -->
++        <dependency>
++            <groupId>cn.hutool</groupId>
++            <artifactId>hutool-all</artifactId>
++            <version>5.1.2</version>
++        </dependency>
++
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-configuration-processor</artifactId>
++            <optional>true</optional>
++        </dependency>
++
++        <dependency>
++            <groupId>com.github.llyb120</groupId>
++            <artifactId>json</artifactId>
++            <version>1.1.14</version>
++        </dependency>
++
++        <dependency>
++            <groupId>org.tuckey</groupId>
++            <artifactId>urlrewritefilter</artifactId>
++            <version>4.0.3</version>
++        </dependency>
++
++        <dependency>
++            <groupId>com.ibeetl</groupId>
++            <artifactId>beetl-framework-starter</artifactId>
++            <version>1.1.60.RELEASE</version>
++            <scope>provided</scope>
++        </dependency>
++
++        <!-- https://mvnrepository.com/artifact/org.mongodb/mongo-java-driver -->
++        <dependency>
++            <groupId>org.mongodb</groupId>
++            <artifactId>mongo-java-driver</artifactId>
++            <version>3.11.0</version>
++            <scope>provided</scope>
++        </dependency>
++
++        <!-- https://mvnrepository.com/artifact/org.eclipse.jdt/ecj -->
++        <dependency>
++            <groupId>org.eclipse.jdt</groupId>
++            <artifactId>ecj</artifactId>
++            <version>3.22.0</version>
++        </dependency>
++
++        <!-- swagger -->
++        <dependency>
++            <groupId>io.springfox</groupId>
++            <artifactId>springfox-swagger2</artifactId>
++            <version>2.9.2</version>
++            <scope>provided</scope>
++        </dependency>
++        <dependency>
++            <groupId>io.springfox</groupId>
++            <artifactId>springfox-swagger-ui</artifactId>
++            <version>2.9.2</version>
++            <scope>provided</scope>
++        </dependency>
++
++
++    </dependencies>
++
++    <distributionManagement>
++        <repository>
++            <id>rdc-releases</id>
++            <url>https://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/</url>
++        </repository>
++        <snapshotRepository>
++            <id>rdc-snapshots</id>
++            <url>https://repo.rdc.aliyun.com/repository/75714-snapshot-t7sMIW/</url>
++        </snapshotRepository>
++    </distributionManagement>
++</project>
+\ No newline at end of file
+Index: com/github/llyb120/house-api/0.0.2/house-api-0.0.2.pom.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.\r\n#Fri Oct 08 16:34:07 CST 2021\r\nhttps\\://repo.maven.apache.org/maven2/.lastUpdated=1633682047689\r\nhttps\\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1633682047905\r\nhttps\\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=\r\nhttp\\://106.52.185.146\\:8081/repository/maven-public/.error=Could not transfer artifact com.github.llyb120\\:house-api\\:pom\\:0.0.2 from/to nexus (http\\://106.52.185.146\\:8081/repository/maven-public/)\\: Transfer failed for http\\://106.52.185.146\\:8081/repository/maven-public/com/github/llyb120/house-api/0.0.2/house-api-0.0.2.pom\r\nhttps\\://repo.maven.apache.org/maven2/.error=\r\n@default-nexus-http\\://106.52.185.146\\:8081/repository/maven-public/.lastUpdated=1633682047479\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/house-api/0.0.2/house-api-0.0.2.pom.lastUpdated b/com/github/llyb120/house-api/0.0.2/house-api-0.0.2.pom.lastUpdated
+--- a/com/github/llyb120/house-api/0.0.2/house-api-0.0.2.pom.lastUpdated	(revision 0bcbe84f81707f70e88c77e2bd32d51f62d83cbd)
++++ b/com/github/llyb120/house-api/0.0.2/house-api-0.0.2.pom.lastUpdated	(date 1604588762000)
+@@ -1,8 +1,7 @@
+ #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+-#Fri Oct 08 16:34:07 CST 2021
+-https\://repo.maven.apache.org/maven2/.lastUpdated=1633682047689
+-https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1633682047905
++#Thu Nov 05 23:06:01 CST 2020
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1604588739063
++https\://maven.aliyun.com/nexus/content/groups/public/.error=
++http\://106.52.185.146\:8081/repository/maven-public/.lastUpdated=1604588761815
+ https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=
+-http\://106.52.185.146\:8081/repository/maven-public/.error=Could not transfer artifact com.github.llyb120\:house-api\:pom\:0.0.2 from/to nexus (http\://106.52.185.146\:8081/repository/maven-public/)\: Transfer failed for http\://106.52.185.146\:8081/repository/maven-public/com/github/llyb120/house-api/0.0.2/house-api-0.0.2.pom
+-https\://repo.maven.apache.org/maven2/.error=
+-@default-nexus-http\://106.52.185.146\:8081/repository/maven-public/.lastUpdated=1633682047479
++https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1604588738598
+Index: com/github/llyb120/nami-spring/0.0.21/_remote.repositories
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.21/_remote.repositories b/com/github/llyb120/nami-spring/0.0.21/_remote.repositories
+new file mode 100644
+--- /dev/null	(date 1596984380000)
++++ b/com/github/llyb120/nami-spring/0.0.21/_remote.repositories	(date 1596984380000)
+@@ -0,0 +1,4 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Sun Aug 09 22:46:18 CST 2020
++nami-spring-0.0.21.jar>=
++nami-spring-0.0.21.pom>=
+Index: com/github/llyb120/nami-spring/0.0.21/nami-spring-0.0.21.jar.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.21/nami-spring-0.0.21.jar.lastUpdated b/com/github/llyb120/nami-spring/0.0.21/nami-spring-0.0.21.jar.lastUpdated
+new file mode 100644
+--- /dev/null	(date 1596788274000)
++++ b/com/github/llyb120/nami-spring/0.0.21/nami-spring-0.0.21.jar.lastUpdated	(date 1596788274000)
+@@ -0,0 +1,6 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Fri Aug 07 16:17:52 CST 2020
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1596788272825
++https\://maven.aliyun.com/nexus/content/groups/public/.error=
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=
++https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1596788272210
+Index: com/github/llyb120/nami-spring/0.0.21/nami-spring-0.0.21.pom.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.21/nami-spring-0.0.21.pom.lastUpdated b/com/github/llyb120/nami-spring/0.0.21/nami-spring-0.0.21.pom.lastUpdated
+new file mode 100644
+--- /dev/null	(date 1596788272000)
++++ b/com/github/llyb120/nami-spring/0.0.21/nami-spring-0.0.21.pom.lastUpdated	(date 1596788272000)
+@@ -0,0 +1,6 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Fri Aug 07 16:17:50 CST 2020
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1596788270782
++https\://maven.aliyun.com/nexus/content/groups/public/.error=
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=
++https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1596788270097
+Index: com/github/llyb120/nami-spring/0.0.25/_remote.repositories
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.25/_remote.repositories b/com/github/llyb120/nami-spring/0.0.25/_remote.repositories
+new file mode 100644
+--- /dev/null	(date 1600937824000)
++++ b/com/github/llyb120/nami-spring/0.0.25/_remote.repositories	(date 1600937824000)
+@@ -0,0 +1,4 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Thu Sep 24 16:57:02 CST 2020
++nami-spring-0.0.25.pom>nexus=
++nami-spring-0.0.25.jar>nexus=
+Index: com/github/llyb120/nami-spring/0.0.24/nami-spring-0.0.24.pom
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.24/nami-spring-0.0.24.pom b/com/github/llyb120/nami-spring/0.0.24/nami-spring-0.0.24.pom
+new file mode 100644
+--- /dev/null	(date 1600603642000)
++++ b/com/github/llyb120/nami-spring/0.0.24/nami-spring-0.0.24.pom	(date 1600603642000)
+@@ -0,0 +1,108 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++
++    <parent>
++        <groupId>org.springframework.boot</groupId>
++        <artifactId>spring-boot-starter-parent</artifactId>
++        <version>2.0.4.RELEASE</version>
++    </parent>
++
++    <groupId>com.github.llyb120</groupId>
++    <artifactId>nami-spring</artifactId>
++    <version>0.0.24</version>
++
++
++    <dependencies>
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter</artifactId>
++            <scope>provided</scope>
++        </dependency>
++
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-web</artifactId>
++            <scope>provided</scope>
++        </dependency>
++
++
++        <!-- https://mvnrepository.com/artifact/cn.hutool/hutool-all -->
++        <dependency>
++            <groupId>cn.hutool</groupId>
++            <artifactId>hutool-all</artifactId>
++            <version>5.1.2</version>
++        </dependency>
++
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-configuration-processor</artifactId>
++            <optional>true</optional>
++        </dependency>
++
++        <dependency>
++            <groupId>com.github.llyb120</groupId>
++            <artifactId>json</artifactId>
++            <version>1.1.15</version>
++        </dependency>
++
++        <dependency>
++            <groupId>org.tuckey</groupId>
++            <artifactId>urlrewritefilter</artifactId>
++            <version>4.0.3</version>
++        </dependency>
++
++        <dependency>
++            <groupId>com.ibeetl</groupId>
++            <artifactId>beetl-framework-starter</artifactId>
++            <version>1.1.60.RELEASE</version>
++            <scope>provided</scope>
++        </dependency>
++
++        <!-- https://mvnrepository.com/artifact/org.mongodb/mongo-java-driver -->
++        <dependency>
++            <groupId>org.mongodb</groupId>
++            <artifactId>mongo-java-driver</artifactId>
++            <version>3.11.0</version>
++            <scope>provided</scope>
++        </dependency>
++
++        <!-- https://mvnrepository.com/artifact/org.eclipse.jdt/ecj -->
++        <dependency>
++            <groupId>org.eclipse.jdt</groupId>
++            <artifactId>ecj</artifactId>
++            <version>3.22.0</version>
++        </dependency>
++
++        <!-- swagger -->
++        <dependency>
++            <groupId>io.springfox</groupId>
++            <artifactId>springfox-swagger2</artifactId>
++            <version>2.9.2</version>
++            <scope>provided</scope>
++        </dependency>
++        <dependency>
++            <groupId>io.springfox</groupId>
++            <artifactId>springfox-swagger-ui</artifactId>
++            <version>2.9.2</version>
++            <scope>provided</scope>
++        </dependency>
++
++
++    </dependencies>
++
++    <distributionManagement>
++        <snapshotRepository>
++            <id>maven-snapshots</id>
++            <name>maven-snapshots-repository</name>
++            <url>http://106.52.185.146:8081/repository/maven-snapshots/</url>
++        </snapshotRepository>
++        <repository>
++            <id>maven-releases</id>
++            <name>maven-releases-repository</name>
++            <url>http://106.52.185.146:8081/repository/maven-releases/</url>
++        </repository>
++    </distributionManagement>
++</project>
+\ No newline at end of file
+Index: com/github/llyb120/nami-spring/0.0.24/_remote.repositories
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.24/_remote.repositories b/com/github/llyb120/nami-spring/0.0.24/_remote.repositories
+new file mode 100644
+--- /dev/null	(date 1600603798000)
++++ b/com/github/llyb120/nami-spring/0.0.24/_remote.repositories	(date 1600603798000)
+@@ -0,0 +1,4 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Sun Sep 20 20:09:56 CST 2020
++nami-spring-0.0.24.pom>=
++nami-spring-0.0.24.jar>=
+Index: com/github/llyb120/nami-spring/0.0.30/_remote.repositories
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.30/_remote.repositories b/com/github/llyb120/nami-spring/0.0.30/_remote.repositories
+new file mode 100644
+--- /dev/null	(date 1609832860000)
++++ b/com/github/llyb120/nami-spring/0.0.30/_remote.repositories	(date 1609832860000)
+@@ -0,0 +1,4 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Tue Jan 05 15:47:39 CST 2021
++nami-spring-0.0.30.jar>nexus=
++nami-spring-0.0.30.pom>nexus=
+Index: com/github/llyb120/nami-spring/0.0.30/nami-spring-0.0.30.jar.sha1
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.30/nami-spring-0.0.30.jar.sha1 b/com/github/llyb120/nami-spring/0.0.30/nami-spring-0.0.30.jar.sha1
+new file mode 100644
+--- /dev/null	(date 1609832860000)
++++ b/com/github/llyb120/nami-spring/0.0.30/nami-spring-0.0.30.jar.sha1	(date 1609832860000)
+@@ -0,0 +1,1 @@
++5e50cf4c13e93cac4b5878db51fed05f151fa568
+\ No newline at end of file
+Index: com/github/llyb120/nami-spring/0.0.30/nami-spring-0.0.30.pom.sha1
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.30/nami-spring-0.0.30.pom.sha1 b/com/github/llyb120/nami-spring/0.0.30/nami-spring-0.0.30.pom.sha1
+new file mode 100644
+--- /dev/null	(date 1609832848000)
++++ b/com/github/llyb120/nami-spring/0.0.30/nami-spring-0.0.30.pom.sha1	(date 1609832848000)
+@@ -0,0 +1,1 @@
++7c9f84173c644a5103af0e586819202d3f24785c
+\ No newline at end of file
+Index: com/github/llyb120/nami-spring/0.0.30/nami-spring-0.0.30.pom
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.30/nami-spring-0.0.30.pom b/com/github/llyb120/nami-spring/0.0.30/nami-spring-0.0.30.pom
+new file mode 100644
+--- /dev/null	(date 1609832842000)
++++ b/com/github/llyb120/nami-spring/0.0.30/nami-spring-0.0.30.pom	(date 1609832842000)
+@@ -0,0 +1,108 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++
++    <parent>
++        <groupId>org.springframework.boot</groupId>
++        <artifactId>spring-boot-starter-parent</artifactId>
++        <version>2.0.4.RELEASE</version>
++    </parent>
++
++    <groupId>com.github.llyb120</groupId>
++    <artifactId>nami-spring</artifactId>
++    <version>0.0.30</version>
++
++
++    <dependencies>
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter</artifactId>
++            <scope>provided</scope>
++        </dependency>
++
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-web</artifactId>
++            <scope>provided</scope>
++        </dependency>
++
++
++        <!-- https://mvnrepository.com/artifact/cn.hutool/hutool-all -->
++        <dependency>
++            <groupId>cn.hutool</groupId>
++            <artifactId>hutool-all</artifactId>
++            <version>5.1.2</version>
++        </dependency>
++
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-configuration-processor</artifactId>
++            <optional>true</optional>
++        </dependency>
++
++        <dependency>
++            <groupId>com.github.llyb120</groupId>
++            <artifactId>json</artifactId>
++            <version>1.1.15</version>
++        </dependency>
++
++        <dependency>
++            <groupId>org.tuckey</groupId>
++            <artifactId>urlrewritefilter</artifactId>
++            <version>4.0.3</version>
++        </dependency>
++
++        <dependency>
++            <groupId>com.ibeetl</groupId>
++            <artifactId>beetl-framework-starter</artifactId>
++            <version>1.1.60.RELEASE</version>
++            <scope>provided</scope>
++        </dependency>
++
++        <!-- https://mvnrepository.com/artifact/org.mongodb/mongo-java-driver -->
++        <dependency>
++            <groupId>org.mongodb</groupId>
++            <artifactId>mongo-java-driver</artifactId>
++            <version>3.11.0</version>
++            <scope>provided</scope>
++        </dependency>
++
++        <!-- https://mvnrepository.com/artifact/org.eclipse.jdt/ecj -->
++        <dependency>
++            <groupId>org.eclipse.jdt</groupId>
++            <artifactId>ecj</artifactId>
++            <version>3.22.0</version>
++        </dependency>
++
++        <!-- swagger -->
++        <dependency>
++            <groupId>io.springfox</groupId>
++            <artifactId>springfox-swagger2</artifactId>
++            <version>2.9.2</version>
++            <scope>provided</scope>
++        </dependency>
++        <dependency>
++            <groupId>io.springfox</groupId>
++            <artifactId>springfox-swagger-ui</artifactId>
++            <version>2.9.2</version>
++            <scope>provided</scope>
++        </dependency>
++
++
++    </dependencies>
++
++    <distributionManagement>
++        <snapshotRepository>
++            <id>maven-snapshots</id>
++            <name>maven-snapshots-repository</name>
++            <url>http://106.52.185.146:8081/repository/maven-snapshots/</url>
++        </snapshotRepository>
++        <repository>
++            <id>maven-releases</id>
++            <name>maven-releases-repository</name>
++            <url>http://106.52.185.146:8081/repository/maven-releases/</url>
++        </repository>
++    </distributionManagement>
++</project>
+Index: com/github/llyb120/nami-spring/0.0.25/nami-spring-0.0.25.jar.sha1
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.25/nami-spring-0.0.25.jar.sha1 b/com/github/llyb120/nami-spring/0.0.25/nami-spring-0.0.25.jar.sha1
+new file mode 100644
+--- /dev/null	(date 1600937824000)
++++ b/com/github/llyb120/nami-spring/0.0.25/nami-spring-0.0.25.jar.sha1	(date 1600937824000)
+@@ -0,0 +1,1 @@
++80d951b11f5f5bed9052095a80c66bedd4dff831
+\ No newline at end of file
+Index: com/github/llyb120/nami-spring/0.0.25/nami-spring-0.0.25.pom.sha1
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.25/nami-spring-0.0.25.pom.sha1 b/com/github/llyb120/nami-spring/0.0.25/nami-spring-0.0.25.pom.sha1
+new file mode 100644
+--- /dev/null	(date 1600937818000)
++++ b/com/github/llyb120/nami-spring/0.0.25/nami-spring-0.0.25.pom.sha1	(date 1600937818000)
+@@ -0,0 +1,1 @@
++9c08ad112b2c0ee744a313d67888a93aa46fbed9
+\ No newline at end of file
+Index: com/github/llyb120/nami-spring/0.0.25/nami-spring-0.0.25.pom
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.25/nami-spring-0.0.25.pom b/com/github/llyb120/nami-spring/0.0.25/nami-spring-0.0.25.pom
+new file mode 100644
+--- /dev/null	(date 1600937818000)
++++ b/com/github/llyb120/nami-spring/0.0.25/nami-spring-0.0.25.pom	(date 1600937818000)
+@@ -0,0 +1,108 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++
++    <parent>
++        <groupId>org.springframework.boot</groupId>
++        <artifactId>spring-boot-starter-parent</artifactId>
++        <version>2.0.4.RELEASE</version>
++    </parent>
++
++    <groupId>com.github.llyb120</groupId>
++    <artifactId>nami-spring</artifactId>
++    <version>0.0.25</version>
++
++
++    <dependencies>
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter</artifactId>
++            <scope>provided</scope>
++        </dependency>
++
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-web</artifactId>
++            <scope>provided</scope>
++        </dependency>
++
++
++        <!-- https://mvnrepository.com/artifact/cn.hutool/hutool-all -->
++        <dependency>
++            <groupId>cn.hutool</groupId>
++            <artifactId>hutool-all</artifactId>
++            <version>5.1.2</version>
++        </dependency>
++
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-configuration-processor</artifactId>
++            <optional>true</optional>
++        </dependency>
++
++        <dependency>
++            <groupId>com.github.llyb120</groupId>
++            <artifactId>json</artifactId>
++            <version>1.1.15</version>
++        </dependency>
++
++        <dependency>
++            <groupId>org.tuckey</groupId>
++            <artifactId>urlrewritefilter</artifactId>
++            <version>4.0.3</version>
++        </dependency>
++
++        <dependency>
++            <groupId>com.ibeetl</groupId>
++            <artifactId>beetl-framework-starter</artifactId>
++            <version>1.1.60.RELEASE</version>
++            <scope>provided</scope>
++        </dependency>
++
++        <!-- https://mvnrepository.com/artifact/org.mongodb/mongo-java-driver -->
++        <dependency>
++            <groupId>org.mongodb</groupId>
++            <artifactId>mongo-java-driver</artifactId>
++            <version>3.11.0</version>
++            <scope>provided</scope>
++        </dependency>
++
++        <!-- https://mvnrepository.com/artifact/org.eclipse.jdt/ecj -->
++        <dependency>
++            <groupId>org.eclipse.jdt</groupId>
++            <artifactId>ecj</artifactId>
++            <version>3.22.0</version>
++        </dependency>
++
++        <!-- swagger -->
++        <dependency>
++            <groupId>io.springfox</groupId>
++            <artifactId>springfox-swagger2</artifactId>
++            <version>2.9.2</version>
++            <scope>provided</scope>
++        </dependency>
++        <dependency>
++            <groupId>io.springfox</groupId>
++            <artifactId>springfox-swagger-ui</artifactId>
++            <version>2.9.2</version>
++            <scope>provided</scope>
++        </dependency>
++
++
++    </dependencies>
++
++    <distributionManagement>
++        <snapshotRepository>
++            <id>maven-snapshots</id>
++            <name>maven-snapshots-repository</name>
++            <url>http://106.52.185.146:8081/repository/maven-snapshots/</url>
++        </snapshotRepository>
++        <repository>
++            <id>maven-releases</id>
++            <name>maven-releases-repository</name>
++            <url>http://106.52.185.146:8081/repository/maven-releases/</url>
++        </repository>
++    </distributionManagement>
++</project>
+Index: com/github/llyb120/nami-spring/0.0.25/nami-spring-0.0.25.jar.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.25/nami-spring-0.0.25.jar.lastUpdated b/com/github/llyb120/nami-spring/0.0.25/nami-spring-0.0.25.jar.lastUpdated
+new file mode 100644
+--- /dev/null	(date 1600937824000)
++++ b/com/github/llyb120/nami-spring/0.0.25/nami-spring-0.0.25.jar.lastUpdated	(date 1600937824000)
+@@ -0,0 +1,7 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Thu Sep 24 16:57:02 CST 2020
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1600937822004
++https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1600937821498
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=
++https\://maven.aliyun.com/nexus/content/groups/public/.error=
++http\://106.52.185.146\:8081/repository/maven-public/.lastUpdated=1600937822189
+Index: com/github/llyb120/nami-spring/0.0.25/nami-spring-0.0.25.pom.lastUpdated
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/com/github/llyb120/nami-spring/0.0.25/nami-spring-0.0.25.pom.lastUpdated b/com/github/llyb120/nami-spring/0.0.25/nami-spring-0.0.25.pom.lastUpdated
+new file mode 100644
+--- /dev/null	(date 1600937818000)
++++ b/com/github/llyb120/nami-spring/0.0.25/nami-spring-0.0.25.pom.lastUpdated	(date 1600937818000)
+@@ -0,0 +1,7 @@
++#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
++#Thu Sep 24 16:56:56 CST 2020
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1600937816128
++https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1600937815632
++https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=
++https\://maven.aliyun.com/nexus/content/groups/public/.error=
++http\://106.52.185.146\:8081/repository/maven-public/.lastUpdated=1600937816278

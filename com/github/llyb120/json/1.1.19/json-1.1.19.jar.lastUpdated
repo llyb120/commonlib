@@ -1,6 +1,7 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Sep 30 10:49:03 CST 2021
-https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1632970143218
+#Mon Nov 02 09:48:23 CST 2020
+https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1604281691566
 https\://maven.aliyun.com/nexus/content/groups/public/.error=
+http\://106.52.185.146\:8081/repository/maven-public/.lastUpdated=1604281703117
 https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=
-https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1632970142183
+https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1604281690750

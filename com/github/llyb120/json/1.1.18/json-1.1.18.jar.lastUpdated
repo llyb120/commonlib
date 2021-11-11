@@ -1,8 +1,7 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Fri Oct 08 16:37:24 CST 2021
-https\://repo.maven.apache.org/maven2/.lastUpdated=1633682244069
-https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1633682244723
+#Sat Sep 05 16:05:59 CST 2020
+https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1599293159157
+https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1599293158611
 https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=
-http\://106.52.185.146\:8081/repository/maven-public/.error=Could not transfer artifact com.github.llyb120\:json\:jar\:1.1.18 from/to nexus (http\://106.52.185.146\:8081/repository/maven-public/)\: Transfer failed for http\://106.52.185.146\:8081/repository/maven-public/com/github/llyb120/json/1.1.18/json-1.1.18.jar
-https\://repo.maven.apache.org/maven2/.error=
-@default-nexus-http\://106.52.185.146\:8081/repository/maven-public/.lastUpdated=1633682211360
+https\://maven.aliyun.com/nexus/content/groups/public/.error=
+http\://106.52.185.146\:8081/repository/maven-public/.lastUpdated=1599293159630

@@ -1,0 +1,9 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Wed Feb 24 10:25:51 CST 2021
+https\://repo.maven.apache.org/maven2/.lastUpdated=1614133551610
+@default-spring-milestones-https\://repo.spring.io/libs-milestone/.lastUpdated=1614048743932
+https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1593566213143
+https\://maven.aliyun.com/nexus/content/groups/public/.error=
+https\://repo.maven.apache.org/maven2/.error=
+https\://repo.spring.io/libs-milestone/.error=Could not transfer artifact com.github.llyb120\:nami-spring\:pom\:0.0.11 from/to spring-milestones (https\://repo.spring.io/libs-milestone)\: Authentication failed for https\://repo.spring.io/libs-milestone/com/github/llyb120/nami-spring/0.0.11/nami-spring-0.0.11.pom 401 Unauthorized
+https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1593566209447
