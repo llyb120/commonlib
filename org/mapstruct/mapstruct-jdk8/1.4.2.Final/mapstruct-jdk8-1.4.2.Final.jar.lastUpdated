@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Nov 09 11:23:47 CST 2021
+https\://repo.maven.apache.org/maven2/.lastUpdated=1636428227193
+http\://106.52.185.146\:8081/repository/maven-public/.error=Could not transfer artifact org.mapstruct\:mapstruct-jdk8\:jar\:1.4.2.Final from/to nexus (http\://106.52.185.146\:8081/repository/maven-public/)\: Transfer failed for http\://106.52.185.146\:8081/repository/maven-public/org/mapstruct/mapstruct-jdk8/1.4.2.Final/mapstruct-jdk8-1.4.2.Final.jar
+@default-nexus-http\://106.52.185.146\:8081/repository/maven-public/.lastUpdated=1636428225803

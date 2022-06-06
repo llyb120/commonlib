@@ -1,0 +1,14 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue May 31 18:05:15 CST 2022
+https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.lastUpdated=1653991510320
+https\://gitee.com/llyb120/commonlib/raw/master/.lastUpdated=1653991512852
+http\://repo.e-iceblue.cn/repository/maven-public/.error=
+https\://gitee.com/llyb120/commonlib/raw/master/.error=
+http\://repo.e-iceblue.cn/repository/maven-public/.lastUpdated=1653991515140
+http\://maven.aliyun.com/nexus/content/groups/public/.error=
+@default-central-repos1-http\://repo1.maven.org/maven2/.lastUpdated=1653991511346
+https\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1653991509532
+http\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1653991512205
+https\://maven.aliyun.com/nexus/content/groups/public/.error=
+https\://repo.rdc.aliyun.com/repository/75714-release-VGoHRA/.error=
+http\://repo1.maven.org/maven2/.error=Could not transfer artifact org.mapstruct\:mapstruct\:jar\:1.4.2.FINAL from/to central-repos1 (http\://repo1.maven.org/maven2/)\: Transfer failed for http\://repo1.maven.org/maven2/org/mapstruct/mapstruct/1.4.2.FINAL/mapstruct-1.4.2.FINAL.jar 501 HTTPS Required
